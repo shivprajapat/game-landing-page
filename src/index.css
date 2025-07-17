@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#212529] text-white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  p {
+    @apply text-[#929292] text-base;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .container {
+    @apply px-4 w-full max-w-full;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .heading {
+    @apply text-3xl lg:text-[40px] text-white font-semibold mb-5;
+  }
+
+  .heading .highlight {
+    @apply text-[#A4A4A4];
+  }
+
+  .animation-slide-top {
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .form-label {
+    @apply block mb-2 text-base font-normal text-white capitalize;
+  }
+
+  .form-control {
+    @apply bg-black/25 border border-white/20 text-white text-sm rounded-md block w-full p-2.5 capitalize;
+  }
+}
+button {
+  @apply cursor-pointer;
+}
+.btn:after {
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/*  */
+
+.go-corner {
+  border-radius: 0 4px 0 32px;
+}
+
+.card:before {
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+.card:hover:before {
+  transform: scale(34);
+}
+
+.card:hover .small-desc {
+  transition: all 0.5s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card:hover .card-title {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
