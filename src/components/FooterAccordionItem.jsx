@@ -27,7 +27,7 @@ const FooterAccordionItem = ({ title, content, isOpen, onClick }) => {
         style={{
           maxHeight,
         }}
-        className={`transition-all duration-500 ease-in-out overflow-hidden px-4 bg-white text-gray-700`}
+        className="transition-all duration-500 ease-in-out overflow-hidden px-4 font-normal text-sm bg-white text-black"
       >
         <div className="py-3">
           <ul className="flex items-start flex-wrap gap-x-5 gap-y-2">

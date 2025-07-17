@@ -27,7 +27,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
         style={{
           maxHeight,
         }}
-        className={`transition-all duration-500 ease-in-out overflow-hidden px-4 bg-white text-gray-700`}
+        className="transition-all duration-500 ease-in-out overflow-hidden px-4 font-normal text-base bg-white text-black"
       >
         <div className="py-3">{content}</div>
       </div>

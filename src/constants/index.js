@@ -119,47 +119,38 @@ const winnersData = [
       " I'm 28, used to compete in state chess tournaments as a child, but never thought I could earn from chess. With the Ziffi App, I now make ₹1000-₹1500+ every day in just a few minutes! It's a great way to earn while enjoying the game.",
   },
 ];
-const moreFeaturesData = [
+const howToInstallData = [
   {
-    icon: "/images/icons/ivr.svg",
-    title: "IVR Solution",
-    description:
-      "Packed with API features you will love to collaborate with issues and change business.",
+    imageUrl:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/1-winzo-india-steps@2x-1751991826214.webp?w=1920&q=80",
+    title: "Click 'Download' button in the popup below to continue.",
+    step: "Step 1",
   },
   {
-    icon: "/images/icons/voice-call.svg",
-    title: "Voice Call",
-    description:
-      "Packed with API features you will love to collaborate with issues and change business.",
+    imageUrl:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/2-winzo-india-steps@2x-1751991876651.webp?w=1200&q=80",
+    title: "Check your phone notifications to find the downloaded app.",
+    step: "Step 2",
   },
   {
-    icon: "/images/icons/bulk-sms.svg",
-    title: "Bulk SMS",
-    description:
-      "Packed with API features you will love to collaborate with issues and change business.",
-  },
-];
-
-const feedbacksData = [
-  {
-    icon: "/images/icons/happy-clients.svg",
-    title: "Happy Clients",
-    number: "450 +",
+    imageUrl:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/3-winzo-india-steps@2x-1751991893587.webp?w=1920&q=80",
+    title:
+      "Locate the downloaded file on your device and open it to begin installation.",
+    step: "Step 3",
   },
   {
-    icon: "/images/icons/customer-support.svg",
-    title: "Customer Support",
-    number: "24*7",
+    imageUrl:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/4-winzo-india-steps@2x-1751991911204.webp?w=1920&q=80",
+    title: "In your browser settings, update permissions to allow installs.",
+    step: "Step 4",
   },
   {
-    icon: "/images/icons/managing-leads.svg",
-    title: "Managing Leads",
-    number: "4 cr+",
-  },
-  {
-    icon: "/images/icons/managing-properties.svg",
-    title: "Managing Properties",
-    number: "80 lcs+",
+    imageUrl:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/5-winzo-india-steps@2x-1751991926228.webp?w=1920&q=80",
+    title:
+      "Finish the installation by clicking on the install button. Happy Gaming!",
+    step: "Step 5",
   },
 ];
 
@@ -566,9 +557,8 @@ const footerLinks = [
 export {
   navLinks,
   winnersData,
-  moreFeaturesData,
-  feedbacksData,
   accordionData,
   socialLinks,
+  howToInstallData,
   footerLinks,
 };

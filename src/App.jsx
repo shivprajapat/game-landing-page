@@ -1,8 +1,12 @@
 import React, { Fragment } from "react";
-// import { Banner, Features, Product, Instant, MoreFeatures, Frequently } from './components'
-// import RequestModal from '@/components/RequestModal'
 import { Header, Footer } from "./components";
-import { Banner, FAQ, InstantWithDrawal, Winners } from "./sections";
+import {
+  Banner,
+  FAQ,
+  InstallApp,
+  InstantWithDrawal,
+  Winners,
+} from "./sections";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -14,16 +18,9 @@ const App = () => {
         <Banner />
         <InstantWithDrawal />
         <Winners />
+        <InstallApp />
         <FAQ />
-
-        {/*
-      <Features />
-      <Product />
-      <Instant modalHandler={modalHandler} />
-      <MoreFeatures modalHandler={modalHandler} />
-      <Frequently />
-      <RequestModal open={open} onClose={() => setOpen(false)} /> */}
-      </main>{" "}
+      </main>
       <Footer />
     </Fragment>
   );

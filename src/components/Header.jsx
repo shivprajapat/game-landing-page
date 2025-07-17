@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed  w-full z-20 transition-all duration-200 ${
+      className={`fixed top-0 w-full z-20 transition-all duration-200 ${
         show && " bg-black"
       }`}
     >

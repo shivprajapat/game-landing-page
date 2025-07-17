@@ -68,16 +68,17 @@ const Footer = () => {
               Contact us
             </h5>
             <div>
-              <p class="text-white stol-b text-medium-gray text-15 line-height-30">
+              <p className="text-white text-medium-gray">
+                <span className="mr-1.5">Address:</span>
                 #15A, 4th Floor, City Vista, Tower A, Fountain Road, Kharadi,
                 Pune, MH - 411014.
                 <br />
                 <span className="mr-1.5">Mail:</span>
-                <a href="mailto:support@example.com" class="text-[#929292]">
+                <a href="mailto:support@example.com" className="text-gray-100">
                   support@example.com
                 </a>
                 <br /> <span className="mr-1.5">Call:</span>
-                <a href="tel:123456789" class="text-[#929292]">
+                <a href="tel:123456789" className="text-gray-100">
                   +91 12345-67890
                 </a>
               </p>

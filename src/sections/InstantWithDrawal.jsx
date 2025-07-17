@@ -4,8 +4,8 @@ const InstantWithDrawal = () => {
   return (
     <div className="bg-white p-5 text-center">
       <div className="container">
-        <h2 className="text-xl text-black font-semibold mb-5">
-          INSTANT WITHDRAWAL
+        <h2 className="text-xl text-black font-playfair font-semibold mb-5">
+          Instant Withdrawal
         </h2>
         <div>
           <img
