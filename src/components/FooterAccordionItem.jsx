@@ -13,12 +13,12 @@ const FooterAccordionItem = ({ title, content, isOpen, onClick }) => {
   }, [isOpen]);
 
   return (
-    <div className="bg-black overflow-hidden">
+    <div className="bg-[#231616] overflow-hidden">
       <button
         onClick={onClick}
         className="w-full text-left px-4 py-2 flex justify-between items-center transition-colors"
       >
-        <span className="font-medium">{title}</span>
+        <span className="font-extralight">{title}</span>
         <span className="text-xl">{isOpen ? "−" : "+"}</span>
       </button>
 
@@ -27,14 +27,14 @@ const FooterAccordionItem = ({ title, content, isOpen, onClick }) => {
         style={{
           maxHeight,
         }}
-        className="transition-all duration-500 ease-in-out overflow-hidden px-4 font-normal text-sm bg-white text-black"
+        className="transition-all duration-500 ease-in-out overflow-hidden px-4 font-extralight text-sm bg-white text-black"
       >
         <div className="py-3">
           <ul className="flex items-start flex-wrap gap-x-5 gap-y-2">
-            {content.map((link) => (
+            {content.map(link => (
               <li key={link.id}>
                 <a
-                  className="hover:text-[#ffca37] transition-all duration-150"
+                  className="hover:text-primary transition-all duration-150"
                   href={link.href}
                   target={link.target || "_self"}
                 >

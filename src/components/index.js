@@ -6,8 +6,11 @@ import AccordionItem from "./AccordionItem";
 import MobileFooter from "./MobileFooter";
 import FooterAccordionItem from "./FooterAccordionItem";
 import DownloadButton from "./DownloadButton";
+import OfferCard from "./OfferCard";
+import Loader from "./Loader";
 export {
   Header,
+  Loader,
   DownloadButton,
   Footer,
   Button,
@@ -15,4 +18,5 @@ export {
   AccordionItem,
   MobileFooter,
   FooterAccordionItem,
+  OfferCard,
 };

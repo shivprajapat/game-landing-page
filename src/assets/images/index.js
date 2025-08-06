@@ -9,8 +9,16 @@ import IconAppStore from "./icons/app-store.png";
 import IconGooglePlay from "./icons/google-play.png";
 import IconLeftArrow from "./icons/left-arrow.svg";
 import IconRightArrow from "./icons/right-arrow.svg";
-import ImageBanner from "./banner-image.webp";
+import ImageBanner from "./banner-image.png";
+import ImagePayments from "./payments.webp";
+import ImageAbout from "./about.png";
 
+import icon100Secure from "./icons/100-Secure.webp";
+import iconRealPlayers from "./icons/Real-Players.webp";
+import iconREFEREarn from "./icons/REFER-Earn.webp";
+import icon24X7Support from "./icons/24X7Support.webp";
+import iconLoader from "./icons/loader.svg";
+import iconStarEmoji from "./icons/emoji2.webp";
 export {
   IconClose,
   IconMenu,
@@ -24,4 +32,12 @@ export {
   ImageBanner,
   IconLeftArrow,
   IconRightArrow,
+  ImagePayments,
+  icon100Secure,
+  icon24X7Support,
+  ImageAbout,
+  iconREFEREarn,
+  iconRealPlayers,
+  iconLoader,
+  iconStarEmoji,
 };

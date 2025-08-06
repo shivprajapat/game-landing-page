@@ -2,63 +2,45 @@ import { IconLeftArrow, IconRightArrow } from "@/assets/images";
 import { Heading } from "@/components";
 import WinnersCard from "@/components/WinnersCard";
 import { winnersData } from "@/constants";
-import React, { useRef } from "react";
+import { useSlider } from "@/hooks/useSlider";
+import React from "react";
 import Slider from "react-slick";
 
 const Winners = () => {
-  const sliderRef = useRef(null);
+  const responsiveBreakpoints = [
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        margin: 5,
+      },
+    },
+  ];
 
-  var settings = {
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
+  const { sliderRef, settings, handlePrevClick, handleNextClick } = useSlider({
+    slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 0,
-    arrows: false, // Disable default arrows
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 3,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          margin: 5,
-        },
-      },
-    ],
-  };
-
-  const handlePrevClick = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev();
-    }
-  };
-
-  const handleNextClick = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext();
-    }
-  };
+    responsive: responsiveBreakpoints,
+  });
 
   return (
-    <section className=" py-5 md:py-8">
-      <div className="container">
+    <section className="py-5 md:py-8">
+      <div className="max-w-7xl mx-4 xl:mx-auto">
         <Heading>Trusted by 10 lakh+ Indians</Heading>
-
         <Slider {...settings} ref={sliderRef}>
           {winnersData.map((item, index) => (
             <div key={index}>

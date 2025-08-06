@@ -1,13 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
 
-.font-playfair {
-  font-family: "Playfair Display", serif;
+.text-primary {
+  color: #ffea01;
 }
+.border-primary {
+  border-color: #ffea01;
+}
+.text-gray {
+  color: #929292;
+}
+.bg-primary {
+  background: #ffea01;
+}
+
 @layer base {
   body {
-    @apply bg-[#212529] text-white;
+    @apply bg-[#1c0101] text-white;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -18,7 +28,7 @@
   }
 
   p {
-    @apply text-slate-800 text-base;
+    @apply text-slate-100 text-base;
   }
 
   ::-webkit-scrollbar {
@@ -106,4 +116,28 @@ button {
 .card:hover .card-title {
   transition: all 0.5s ease-out;
   color: #ffffff;
+}
+@keyframes sweep {
+  0% {
+    background-position: -10000px 0;
+  }
+
+  100% {
+    background-position: 10000px 0;
+  }
+}
+.download-btn {
+  background: linear-gradient(
+      60.19deg,
+      #ffea01 25.73%,
+      rgb(255 255 255 / 40%) 45.27%,
+      rgba(133, 239, 49, 0) 62.27%
+    ),
+    #ffea01;
+  animation-duration: 100s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: sweep;
+  animation-timing-function: linear;
+  @apply relative rounded-lg px-3 md:px-5 py-2 md:py-3 text-sm md:text-base;
 }

@@ -1,34 +1,80 @@
 import { ImageBanner } from "@/assets/images";
 import { Button } from "@/components";
+import Typewriter from "typewriter-effect";
 import React from "react";
-
 const Banner = () => {
   return (
-    <section id="home" className="">
-      <div className="max-w-2xl lg:max-w-6xl mx-4 xl:mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div>
-            <div className="bg-black border border-[#ffca37] shadow px-4 py-2 w-fit rounded-full p-[1px] mb-3">
-              <p className="text-white uppercase text-lg font-semibold font-urbanist">
-                Play Ludo & Win Real Money
-              </p>
+    <section id="home" className="pb-7 md:pb-10">
+      <div className="max-w-7xl mx-4 xl:mx-auto">
+        <div className="flex flex-col-reverse md:flex-row">
+          <div className="flex-auto md:flex-1/2">
+            <div className="mt-8 mb-6 md:mt-0 md:mb-8">
+              <div className="bg-black border border-primary shadow px-4 py-2 w-fit rounded-full p-[1px] mb-3">
+                <p className="text-white uppercase text-base sm:text-lg font-semibold font-urbanist">
+                  Play Ludo & Win Real Money
+                </p>
+              </div>
+              <div className="mb-5 md:mb-10">
+                <h1
+                  className="text-4xl md:leading-normal lg:text-5xl xl:text-6xl text-white font-bold font-urbanist mb-3"
+                  style={{
+                    textShadow: " 3px 2px 0 #9C9C9C",
+                    //  " #FFFCA8 3px 3px 0px, #9C9C9C 5px 5px 0px",
+                  }}
+                >
+                  <Typewriter
+                    options={{
+                      strings: [
+                        'Up to <span style="color:#E79021;">₹ 1 Crore</span> Daily!',
+                        'PLAY GAMES WIN <span style="color:#E79021;">Cash</span>!',
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </h1>
+                <p className="text-white text-base sm:text-lg font-normal">
+                  Download and play LUDO Cash online with your friends and win
+                  big daily
+                </p>
+              </div>
+              <Button className="font-semibold items-center inline-flex gap-1">
+                <span>Get Download link</span>
+                <svg
+                  width="18px"
+                  height="18px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Interface / Download">
+                    <path
+                      id="Vector"
+                      d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                      stroke="#000000"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </g>
+                </svg>
+              </Button>
             </div>
-            <h1 className="text-3xl md:leading-normal lg:text-5xl xl:text-7xl text-white font-bold font-urbanist mb-10">
-              Up to
-              <span className="text-[#ffca37]"> ₹ 1 Crore </span> Daily!
-            </h1>
-
-            <Button className="px-3 md:px-4 lg:px-6 font-semibold md:text-lg lg:text-2xl py-3 lg:py-5">
-              Download Now
-            </Button>
+            <div>
+              <img
+                src="https://ludoempire.com/images/certificate.webp"
+                alt="certificate"
+                className="max-w-full rounded-md md:h-16 object-contain lg:h-20"
+              />
+            </div>
           </div>
-          <div className="h-full max-w-6xl mx-auto w-full">
+          <div className="h-full flex-auto md:flex-1/2 max-w-6xl mx-auto w-full">
             <img
               src={ImageBanner}
-              alt="log"
+              alt="banner"
               // width={438}
               // height={350}
-              className="mx-auto md:h-80 lg:h-96 xl:h-[500px] object-contain"
+              className="ml-auto md:h-80 lg:h-96 xl:h-[550px] object-contain"
             />
           </div>
         </div>

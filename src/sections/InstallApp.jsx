@@ -1,63 +1,45 @@
 import { IconLeftArrow, IconRightArrow } from "@/assets/images";
 import { Heading } from "@/components";
 import { howToInstallData } from "@/constants";
-import React, { useRef } from "react";
+import { useSlider } from "@/hooks/useSlider";
+import React from "react";
 import Slider from "react-slick";
 
 const InstallApp = () => {
-  const sliderRef = useRef(null);
+  const responsiveBreakpoints = [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        margin: 5,
+      },
+    },
+  ];
 
-  var settings = {
-    infinite: false,
-    speed: 500,
+  const { sliderRef, settings, handlePrevClick, handleNextClick } = useSlider({
     slidesToShow: 4,
     slidesToScroll: 1,
-    initialSlide: 0,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 3,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 850,
-        settings: {
-          slidesToShow: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          margin: 5,
-        },
-      },
-    ],
-  };
-
-  const handlePrevClick = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev();
-    }
-  };
-
-  const handleNextClick = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext();
-    }
-  };
-
+    responsive: responsiveBreakpoints,
+  });
   return (
-    <section className=" py-5 md:py-8">
+    <section className="py-5 md:py-8" id="install">
       <div className="max-w-5xl lg:mx-auto mx-4 p-4 md:p-6 rounded-xl lg:p-10 bg-black">
         <div className="mb-16">
-          <Heading>HOW TO INSTALL</Heading>
+          <Heading>How To Install</Heading>
         </div>
         <Slider {...settings} ref={sliderRef}>
           {howToInstallData.map((item, index) => (
@@ -65,7 +47,7 @@ const InstallApp = () => {
               <div>
                 <img
                   src={item.imageUrl}
-                  alt=""
+                  alt={item?.title}
                   className="object-contain w-full h-96"
                 />
                 <div className="mb-2 text-center w-full">

@@ -2,11 +2,11 @@ import React from "react";
 
 const WinnersCard = ({ title, imageUrl, description }) => {
   return (
-    <div className="card block relative bg-white border rounded-lg z-10 overflow-hidden p-5 before:absolute before:-z-10 before:-top-4 before:-right-4 before:size-8 before:rounded-4xl before:scale-100 before:bg-black hover:border-[#212529] group mx-1 sm:mx-2">
+    <div className="card block relative bg-white border rounded-lg z-10 overflow-hidden p-5 before:absolute before:-z-10 before:-top-4 before:-right-4 before:size-8 before:rounded-4xl before:scale-100 before:bg-black hover:border-[#212529] group mx-1 sm:mx-2 border-transparent">
       <div className="flex w-full items-center gap-x-2">
         <img
           src={imageUrl}
-          alt=""
+          alt={title}
           width="60"
           height="60"
           className="object-cover rounded-full shrink-0"
@@ -28,7 +28,7 @@ const WinnersCard = ({ title, imageUrl, description }) => {
       <p className="text-sm font-inter group-hover:text-white text-black font-normal tracking-[0.22px]">
         {description}
       </p>
-      <div className="go-corner flex-center absolute size-8 overflow-hidden top-0 right-0 bg-[#ffee37]">
+      <div className="go-corner flex-center absolute size-8 overflow-hidden top-0 right-0 bg-yellow-300">
         <div className="go-arrow -mt-1 -mr-1 text-black">→</div>
       </div>
     </div>

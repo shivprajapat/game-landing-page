@@ -16,9 +16,9 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
     <div className="overflow-hidden">
       <button
         onClick={onClick}
-        className="w-full text-left rounded px-4 py-3 bg-black flex justify-between items-center transition-colors"
+        className="w-full text-left rounded px-4 py-3 bg-[#231616] flex justify-between items-center transition-colors"
       >
-        <span className="font-medium">{title}</span>
+        <span className="font-extralight sm:font-medium">{title}</span>
         <span className="text-xl">{isOpen ? "−" : "+"}</span>
       </button>
 
