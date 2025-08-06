@@ -12,6 +12,7 @@ import IconRightArrow from "./icons/right-arrow.svg";
 import ImageBanner from "./banner-image.png";
 import ImagePayments from "./payments.webp";
 import ImageAbout from "./about.png";
+import ImageCertificate from "./certificate.png";
 
 import icon100Secure from "./icons/100-Secure.webp";
 import iconRealPlayers from "./icons/Real-Players.webp";
@@ -40,4 +41,5 @@ export {
   iconRealPlayers,
   iconLoader,
   iconStarEmoji,
+  ImageCertificate,
 };

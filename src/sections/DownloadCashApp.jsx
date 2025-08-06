@@ -5,7 +5,10 @@ const DownloadCashApp = () => {
     <div className="bg-yellow-300 p-5 text-center">
       <div className="max-w-7xl sm:mx-4 xl:mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between">
-          <div className="flex flex-col sm:flex-row sm:justify-center items-center gap-5 w-full sm:w-fit">
+          <div
+            className="flex flex-col sm:flex-row sm:justify-center items-center gap-5 w-full sm:w-fit"
+            data-aos="fade-right"
+          >
             <div className="flex-between w-full sm:w-fit">
               <img
                 src="https://cdn.dribbble.com/userupload/35406510/file/original-3b5c06647e2961c4d8d4df4efe647a8f.jpg"
@@ -24,7 +27,10 @@ const DownloadCashApp = () => {
               Scan Code to Download <br /> Ludo Cash App NoW!
             </h2>
           </div>
-          <div className="bg-yellow-200 p-1 rounded-md hidden sm:block">
+          <div
+            className="bg-yellow-200 p-1 rounded-md hidden sm:block"
+            data-aos="fade-left"
+          >
             <img
               src="https://d3g4wmezrjkwkg.cloudfront.net/website/images/winzo-games-qr-code-india.png?w=256&q=80"
               alt="qr"

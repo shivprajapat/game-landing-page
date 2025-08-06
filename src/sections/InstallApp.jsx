@@ -38,7 +38,7 @@ const InstallApp = () => {
   return (
     <section className="py-5 md:py-8" id="install">
       <div className="max-w-5xl lg:mx-auto mx-4 p-4 md:p-6 rounded-xl lg:p-10 bg-black">
-        <div className="mb-16">
+        <div className="mb-16" data-aos="fade-up">
           <Heading>How To Install</Heading>
         </div>
         <Slider {...settings} ref={sliderRef}>

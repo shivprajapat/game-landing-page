@@ -36,7 +36,7 @@ const Header = () => {
     >
       <div className="container">
         <nav className="w-full flex py-2 justify-between items-center">
-          <a href="#">
+          <a href="#" data-aos="fade-down">
             <img
               src={IconLogo}
               alt="logo"
@@ -45,7 +45,10 @@ const Header = () => {
               }`}
             />
           </a>
-          <ul className="list-none transition-all duration-200 gap-6 md:gap-10 lg:gap-14 sm:flex hidden justify-end items-center ">
+          <ul
+            className="list-none transition-all duration-200 gap-6 md:gap-10 lg:gap-14 sm:flex hidden justify-end items-center"
+            data-aos="fade-down"
+          >
             {navLinks.map(nav => (
               <li
                 key={nav.id}
@@ -62,7 +65,10 @@ const Header = () => {
             ))}
           </ul>
           <div className="flex gap-3 flex-1 sm:flex-none justify-end items-center">
-            <div className="flex items-center gap-2 sm:gap-3">
+            <div
+              className="flex items-center gap-2 sm:gap-3"
+              data-aos="fade-down"
+            >
               <Button className="download-btn">Download</Button>
               <a href="https://ludoplayers.com/login" target="_blank">
                 <Button className="download-btn">Login</Button>

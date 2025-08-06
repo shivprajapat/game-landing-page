@@ -35,7 +35,11 @@ const WhatWeOffer = () => {
   return (
     <section className="py-5 md:py-8" id="offers">
       <div className="max-w-5xl mx-4 xl:mx-auto">
-        <div className="text-center mb-5">
+        <div
+          className="text-center mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <Heading className="!mb-5">What We Offers</Heading>
           <div
             className={`bg-black border mx-auto transition-opacity duration-300 border-primary shadow px-3 py-1 w-fit rounded-md ${
@@ -48,13 +52,26 @@ const WhatWeOffer = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <OfferCard imageSrc={icon100Secure} heading="100% Secure" />
+          <OfferCard
+            imageSrc={icon100Secure}
+            heading="100% Secure"
+            duration="1000"
+          />
           <OfferCard
             imageSrc={iconRealPlayers}
             heading="No Bots Real Players"
+            duration="2000"
           />
-          <OfferCard imageSrc={iconREFEREarn} heading="Refer & Earn" />
-          <OfferCard imageSrc={icon24X7Support} heading="24X7 Support" />
+          <OfferCard
+            imageSrc={iconREFEREarn}
+            heading="Refer & Earn"
+            duration="3000"
+          />
+          <OfferCard
+            imageSrc={icon24X7Support}
+            heading="24X7 Support"
+            duration="4000"
+          />
         </div>
       </div>
     </section>

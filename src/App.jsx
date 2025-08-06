@@ -4,19 +4,27 @@ import {
   About,
   Banner,
   DownloadCashApp,
+  EnjoyGames,
   FAQ,
   InstallApp,
   InstantWithDrawal,
   WhatWeOffer,
   Winners,
 } from "./sections";
+import ScrollArrow from "./components/ScrollArrow";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ScrollArrow from "./components/ScrollArrow";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const App = () => {
   let [loading, setLoading] = useState(false);
   useEffect(() => {
+    AOS.init({
+      // Optional configuration options
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should only happen once
+      offset: 200, // Offset (in px) from the top of the screen
+    });
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
@@ -32,6 +40,7 @@ const App = () => {
           <main className="pt-28 md:pt-32 lg:pt-36 relative pb-5 sm:pb-0">
             <Banner />
             <DownloadCashApp />
+            <EnjoyGames />
             <About />
             <Winners />
             <WhatWeOffer />

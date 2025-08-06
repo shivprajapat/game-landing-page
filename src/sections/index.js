@@ -6,6 +6,7 @@ import InstallApp from "./InstallApp";
 import WhatWeOffer from "./WhatWeOffer";
 import DownloadCashApp from "./DownloadCashApp";
 import About from "./About";
+import EnjoyGames from "./EnjoyGames";
 export {
   Banner,
   Winners,
@@ -14,5 +15,6 @@ export {
   InstallApp,
   WhatWeOffer,
   About,
+  EnjoyGames,
   DownloadCashApp,
 };

@@ -7,7 +7,12 @@ const About = () => {
     <section className="py-10 lg:py-16" id="about">
       <div className="max-w-7xl mx-4 xl:mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2000"
+          >
             <Heading className="text-left !w-fit !mb-5">About Us</Heading>
             <p className="font-extralight">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
@@ -25,7 +30,12 @@ const About = () => {
               fugit quos? Corrupti, excepturi?
             </p>
           </div>
-          <div>
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2000"
+          >
             <img src={ImageAbout} alt="about" />
           </div>
         </div>
