@@ -4,58 +4,11 @@ import Typewriter from "typewriter-effect";
 import React from "react";
 import { tiltOption } from "@/constants/tiltOption";
 import Tilt from "@/components/Tilt";
+import { DownloadButton } from "@/components";
 
-const DownloadBtn = () => {
-  return (
-    <button
-      className="button bg-[#E79021] size-24 rounded-full flex-center overflow-hidden relative"
-      data-aos="fade-up"
-      data-aos-duration="2000"
-    >
-      <p className="button__text absolute inset-0">
-        {"Get Download Link".split("").map((char, i) => (
-          <span
-            key={i}
-            className="text-sm uppercase inset-1 absolute font-medium"
-            style={{ "--index": i }}
-          >
-            {char}
-          </span>
-        ))}
-      </p>
-      <div className="button__circle size-10 bg-[#231616] relative flex-center overflow-hidden rounded-full">
-        <svg
-          viewBox="0 0 14 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="button__icon"
-          width="14"
-        >
-          <path
-            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-            fill="currentColor"
-          ></path>
-        </svg>
-
-        <svg
-          viewBox="0 0 14 15"
-          fill="none"
-          width="14"
-          xmlns="http://www.w3.org/2000/svg"
-          className="button__icon button__icon--copy"
-        >
-          <path
-            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </div>
-    </button>
-  );
-};
 const Banner = () => {
   return (
-    <section id="home" className="pb-7 md:pb-10">
+    <section id="home" className="pb-7 md:pb-10 transition-all">
       <div className="max-w-7xl px-4 mx-auto">
         <div className="flex flex-col-reverse md:flex-row">
           <div className="flex-auto md:flex-1/2">
@@ -120,8 +73,12 @@ const Banner = () => {
                   </g>
                 </svg>
               </Button> */}
-              <div className="sm:flex hidden">
-                <DownloadBtn />
+              <div
+                className="sm:flex hidden"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <DownloadButton />
               </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="2000">
@@ -139,8 +96,12 @@ const Banner = () => {
             data-aos-offset="500"
             data-aos-duration="1000"
           >
-            <div className="sm:hidden flex">
-              <DownloadBtn />
+            <div
+              className="sm:hidden flex"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <DownloadButton />
             </div>
             <Tilt className="box" options={tiltOption}>
               <img

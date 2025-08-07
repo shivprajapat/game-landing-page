@@ -46,7 +46,7 @@ const Header = () => {
             />
           </a>
           <ul
-            className="list-none transition-all duration-200 gap-6 md:gap-8 lg:gap-10 xl:gap-14 sm:flex hidden justify-end items-center"
+            className="list-none transition-all duration-200 gap-6 md:gap-7 lg:gap-10 xl:gap-14 sm:flex hidden justify-end items-center"
             data-aos="fade-down"
           >
             {navLinks.map(nav => (

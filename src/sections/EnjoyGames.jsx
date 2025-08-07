@@ -50,7 +50,7 @@ const EnjoyGames = () => {
     <section className="py-5 md:py-8 bg-[#231616] rounded-t-full relative">
       <div className="max-w-6xl px-4 mx-auto">
         <div className="relative sm:before:bg-white before:absolute before:bottom-7 before:h-[95%] before:w-full md:before:w-2/3 xl:before:w-2/5 before:left-1/2 before:-translate-x-1/2 before:rounded-t-4xl sm:p-5">
-          <div className="text-center mb-5 sm:mb-8">
+          <div className="text-center mb-8 sm:mb-9">
             <Heading className="!mb-2">
               <div
                 className="flex justify-center items-center gap-2 sm:text-black"
@@ -106,24 +106,24 @@ const EnjoyGames = () => {
           </div>
         </div>
         <div className="absolute bottom-2 w-full lg:bottom-3 xl:bottom-8 left-1/2 -translate-x-1/2 z-30">
-          <p className="text-black font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center">
+          <p className="text-black font-bold text-xl md:text-2xl lg:text-3xl text-center">
             {
               enjoyGamesSliderData[activeIndex % enjoyGamesSliderData.length]
                 .text
             }
           </p>
-          <div className="flex-center  bg-black w-fit mx-auto px-3 py-2 rounded-full gap-3 mt-3 xl:mt-5">
+          <div className="flex-center  bg-black w-fit mx-auto px-2 py-1 rounded-full gap-2 mt-3 xl:mt-5">
             <button
               className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-[#ffcc37] p-2"
               onClick={handlePrevClick}
             >
-              <img src={IconLeftArrow} alt="Previous" width={20} height={20} />
+              <img src={IconLeftArrow} alt="Previous" width={16} height={16} />
             </button>
             <button
               className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-[#ffcc37] p-2"
               onClick={handleNextClick}
             >
-              <img src={IconRightArrow} alt="Next" width={20} height={20} />
+              <img src={IconRightArrow} alt="Next" width={16} height={16} />
             </button>
           </div>
         </div>

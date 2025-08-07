@@ -40,7 +40,7 @@ const InstallApp = () => {
   return (
     <section className="py-5 md:py-8" id="install">
       <div className="max-w-5xl mx-auto p-4 md:p-6 rounded-xl lg:p-10 bg-black">
-        <div className="mb-16" data-aos="fade-up">
+        <div data-aos="fade-up">
           <Heading>How To Install</Heading>
         </div>
         <Slider {...settings} ref={sliderRef}>
@@ -56,7 +56,7 @@ const InstallApp = () => {
                   <p className="text-[#ffcc37] trim-both font-bold text-xl sm:text-2xl mb-2">
                     {item.step}
                   </p>
-                  <p className="text-base font-normal text-white">
+                  <p className="text-base font-normal text-white px-3 sm:px-0">
                     {item.title}
                   </p>
                 </div>
@@ -81,7 +81,7 @@ const InstallApp = () => {
       </div>
       <div className="max-w-5xl mx-auto px-4 py-6 sm:py-10">
         <div className="">
-          <Heading>Snapshot Of Winzo</Heading>
+          <Heading>Snapshot Of Ludo players</Heading>
           <Tilt className="box" options={tiltOption}>
             <img
               src="https://cdn3d.iconscout.com/3d/premium/thumb/online-gamming-11984841-9779170.png"
@@ -91,17 +91,17 @@ const InstallApp = () => {
           </Tilt>
           <div className="space-y-5 text-center">
             <p className="text-base sm:text-lg font-normal">
-              WinZO offers skill-based games and formats, ensuring fairness and
-              safety. As a member of IEIC, WinZO guarantees the integrity of all
-              games on the platform. Trusted payment partners like PayTM, Google
-              Pay, PhonePe, and BHIM are available for secure transactions.
-              Fraudulent play is restricted through advanced fraud detection
-              mechanisms.
+              ludoplayers offers skill-based games and formats, ensuring
+              fairness and safety. As a member of IEIC, ludoplayers guarantees
+              the integrity of all games on the platform. Trusted payment
+              partners like PayTM, Google Pay, PhonePe, and BHIM are available
+              for secure transactions. Fraudulent play is restricted through
+              advanced fraud detection mechanisms.
             </p>
             <p className="text-base sm:text-lg font-normal">
-              The WinZO app is accessible on Android and iOS. Android users can
-              download it from the Download Button on this page, while iOS users
-              can find it on the Apple App Store.
+              The ludoplayers app is accessible on Android and iOS. Android
+              users can download it from the Download Button on this page, while
+              iOS users can find it on the Apple App Store.
             </p>
           </div>
         </div>

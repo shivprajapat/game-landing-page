@@ -187,5 +187,5 @@ button {
 .enjoy-game-shape {
   -webkit-clip-path: ellipse(50% 90% at 50% 100%);
   clip-path: ellipse(50% 90% at 50% 100%);
-  height: clamp(150px, 15vw, 200px);
+  height: clamp(140px, 15vw, 200px);
 }

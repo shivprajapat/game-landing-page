@@ -114,26 +114,6 @@ const Footer = () => {
                   />
                 </a>
               ))}
-              {/* <div className="gap-4 flex items-center mt-2 sm:mt-0">
-                <a href="#" target="_blank" className="hover:animate-pulse">
-                  <img
-                    src={IconGooglePlay}
-                    alt="google-play"
-                    width={130}
-                    height={40}
-                    className="bg-white w-36 p-1 rounded"
-                  />
-                </a>
-                <a href="#" target="_blank" className="hover:animate-pulse">
-                  <img
-                    src={IconAppStore}
-                    alt="app-store"
-                    width={130}
-                    height={40}
-                    className="bg-white w-36 p-1 rounded"
-                  />
-                </a>
-              </div> */}
             </div>
           </div>
         </div>
@@ -184,7 +164,20 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {showDownloadButton && <DownloadButton />}
+      {/* {showDownloadButton && (
+        <div className="fixed bottom-1/4 right-2 z-50">
+          <DownloadButton />
+        </div>
+      )} */}
+      <div
+        className={`fixed right-2 z-50 duration-1000 transition-all ${
+          showDownloadButton
+            ? "bottom-1/5 translate-y-0"
+            : "bottom-0 translate-y-full"
+        }`}
+      >
+        <DownloadButton />
+      </div>
     </footer>
   );
 };

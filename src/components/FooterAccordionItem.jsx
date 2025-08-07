@@ -20,7 +20,7 @@ const FooterAccordionItem = ({ title, content, isOpen, onClick }) => {
         className="w-full text-left px-4 py-2 flex justify-between items-center transition-colors"
       >
         <span className="font-extralight">{title}</span>
-        <button className=" bg-white rounded-full size-7">
+        <button className=" bg-white rounded-full size-7 min-w-7">
           <img src={isOpen ? iconCircleDash : iconCirclePlus} alt="" />
         </button>
       </button>
@@ -37,7 +37,7 @@ const FooterAccordionItem = ({ title, content, isOpen, onClick }) => {
             {content.map(link => (
               <li key={link.id}>
                 <a
-                  className="hover:text-primary transition-all duration-150"
+                  className="hover:text-yellow-500 transition-all duration-150"
                   href={link.href}
                   target={link.target || "_self"}
                 >

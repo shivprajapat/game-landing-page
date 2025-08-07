@@ -2,22 +2,46 @@ import React from "react";
 
 const DownloadButton = () => {
   return (
-    <div className="fixed top-1/2 right-1 z-50">
-      <button className="rounded-full px-1.5 py-4 flex-center bg-yellow-500">
+    <button className="button bg-[#E79021] size-24 rounded-full flex-center overflow-hidden relative">
+      <p className="button__text absolute inset-0">
+        {"Get Download Link".split("").map((char, i) => (
+          <span
+            key={i}
+            className="text-sm uppercase inset-1 absolute font-medium"
+            style={{ "--index": i }}
+          >
+            {char}
+          </span>
+        ))}
+      </p>
+      <div className="button__circle size-10 bg-[#231616] relative flex-center overflow-hidden rounded-full">
         <svg
+          viewBox="0 0 14 15"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="25"
-          height="25"
+          className="button__icon"
+          width="14"
         >
-          <path fill="none" d="M0 0h24v24H0z"></path>
           <path
+            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
             fill="currentColor"
-            d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"
           ></path>
         </svg>
-      </button>
-    </div>
+
+        <svg
+          viewBox="0 0 14 15"
+          fill="none"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+          className="button__icon button__icon--copy"
+        >
+          <path
+            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </button>
   );
 };
 
