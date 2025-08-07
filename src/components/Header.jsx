@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-20 transition-all duration-200 ${
+      className={`fixed top-0 w-full z-30 transition-all duration-200 ${
         show && " bg-black"
       }`}
     >
@@ -46,7 +46,7 @@ const Header = () => {
             />
           </a>
           <ul
-            className="list-none transition-all duration-200 gap-6 md:gap-10 lg:gap-14 sm:flex hidden justify-end items-center"
+            className="list-none transition-all duration-200 gap-6 md:gap-8 lg:gap-10 xl:gap-14 sm:flex hidden justify-end items-center"
             data-aos="fade-down"
           >
             {navLinks.map(nav => (

@@ -5,7 +5,7 @@ import React from "react";
 const About = () => {
   return (
     <section className="py-10 lg:py-16" id="about">
-      <div className="max-w-7xl mx-4 xl:mx-auto">
+      <div className="max-w-7xl px-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div
             data-aos="fade-right"

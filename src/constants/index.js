@@ -28,6 +28,43 @@ const navLinks = [
   },
 ];
 
+const enjoyGamesSliderData = [
+  {
+    text: "Play Candy Match",
+    videoPoster:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+  },
+  {
+    text: "Try Puzzle Quest",
+    videoPoster:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+  },
+  {
+    text: "Explore Word World",
+    videoPoster:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+  },
+  {
+    text: "Adventure Race Time",
+    videoPoster:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+  },
+  {
+    text: "Brain Trainer",
+    videoPoster:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+  },
+  {
+    text: "Math Battle",
+    videoPoster:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+  },
+  {
+    text: "Number Ninja",
+    videoPoster:
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+  },
+];
 const winnersData = [
   {
     imageUrl:
@@ -563,6 +600,7 @@ const footerLinks = [
 
 export {
   navLinks,
+  enjoyGamesSliderData,
   winnersData,
   accordionData,
   socialLinks,

@@ -3,7 +3,7 @@ import React from "react";
 const DownloadCashApp = () => {
   return (
     <div className="bg-yellow-300 p-5 text-center">
-      <div className="max-w-7xl sm:mx-4 xl:mx-auto">
+      <div className="max-w-7xl px-4 mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between">
           <div
             className="flex flex-col sm:flex-row sm:justify-center items-center gap-5 w-full sm:w-fit"

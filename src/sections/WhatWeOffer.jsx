@@ -34,7 +34,7 @@ const WhatWeOffer = () => {
 
   return (
     <section className="py-5 md:py-8" id="offers">
-      <div className="max-w-5xl mx-4 xl:mx-auto">
+      <div className="max-w-5xl px-4 mx-auto">
         <div
           className="text-center mb-5"
           data-aos="fade-up"
@@ -51,7 +51,7 @@ const WhatWeOffer = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <OfferCard
             imageSrc={icon100Secure}
             heading="100% Secure"

@@ -1,11 +1,11 @@
 import { ImageBanner, ImageCertificate } from "@/assets/images";
-import { Button } from "@/components";
+// import { Button } from "@/components";
 import Typewriter from "typewriter-effect";
 import React from "react";
 const Banner = () => {
   return (
     <section id="home" className="pb-7 md:pb-10">
-      <div className="max-w-7xl mx-4 xl:mx-auto">
+      <div className="max-w-7xl px-4 mx-auto">
         <div className="flex flex-col-reverse md:flex-row">
           <div className="flex-auto md:flex-1/2">
             <div className="mt-8 mb-6 md:mt-0 md:mb-8">
@@ -17,7 +17,6 @@ const Banner = () => {
                   Play Ludo & Win Real Money
                 </p>
               </div>
-
               <div
                 className="mb-5 md:mb-10"
                 data-aos="fade-up"
@@ -72,7 +71,7 @@ const Banner = () => {
               </Button> */}
 
               <button
-                class="button bg-[#E79021] size-24 rounded-full flex-center overflow-hidden relative"
+                className="button bg-[#E79021] size-24 rounded-full flex-center overflow-hidden relative"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
@@ -87,12 +86,12 @@ const Banner = () => {
                     </span>
                   ))}
                 </p>
-                <div class="button__circle size-10 bg-[#231616] relative flex-center overflow-hidden rounded-full">
+                <div className="button__circle size-10 bg-[#231616] relative flex-center overflow-hidden rounded-full">
                   <svg
                     viewBox="0 0 14 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    class="button__icon"
+                    className="button__icon"
                     width="14"
                   >
                     <path
@@ -106,7 +105,7 @@ const Banner = () => {
                     fill="none"
                     width="14"
                     xmlns="http://www.w3.org/2000/svg"
-                    class="button__icon button__icon--copy"
+                    className="button__icon button__icon--copy"
                   >
                     <path
                       d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"

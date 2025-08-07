@@ -14,7 +14,7 @@ const FAQ = () => {
         <Heading>FAQ's About Chess Game</Heading>
       </div>
 
-      <div className="max-w-5xl mx-4 xl:mx-auto">
+      <div className="max-w-5xl px-4 mx-auto">
         <div className="space-y-2" data-aos="fade-up" data-aos-duration="1000">
           {accordionData.map((item, index) => (
             <AccordionItem

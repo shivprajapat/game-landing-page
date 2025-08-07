@@ -37,7 +37,7 @@ const App = () => {
       ) : (
         <>
           <Header />
-          <main className="pt-28 md:pt-32 lg:pt-36 relative pb-5 sm:pb-0">
+          <main className="pt-28 md:pt-32 lg:pt-36 relative pb-5 sm:pb-0 w-full">
             <Banner />
             <DownloadCashApp />
             <EnjoyGames />

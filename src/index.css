@@ -143,19 +143,6 @@ button {
   border-radius: 15px 0 15px 15px;
   @apply relative px-3 md:px-6 py-2 md:py-2.5 border-2 border-white text-sm md:text-base;
 }
-/* .slick-dots li {
-  @apply !size-2 !mx-1;
-}
-.slick-dots li button {
-  @apply bg-yellow-800 !p-0 !size-full rounded-full before:bg-yellow-300 before:!p-0 before:!size-full before:rounded-full;
-}
-.slick-dots li button:before {
-  font-size: 0px !important;
-} */
-
-/*  */
-
-/*  */
 
 .button__text {
   animation: text-rotation 8s linear infinite;
@@ -173,4 +160,28 @@ button {
   to {
     rotate: 360deg;
   }
+}
+
+.slide-wrapper {
+  height: clamp(385px, 28.8vw, 550px);
+}
+.slide-card {
+  position: relative;
+  height: clamp(380px, 19.5vw, 379px);
+  width: clamp(160px, 9vw, 183px);
+  transition: all 0.5s ease;
+  transform: scaleX(1.35);
+  margin-top: 20%;
+}
+
+.slide-card video {
+  justify-self: anchor-center;
+}
+.slick-slide.slick-active.slick-center.slick-current .slide-card {
+  @apply opacity-100  mt-0 z-50;
+}
+.enjoy-game-shape {
+  -webkit-clip-path: ellipse(50% 90% at 50% 100%);
+  clip-path: ellipse(50% 90% at 50% 100%);
+  height: clamp(150px, 15vw, 200px);
 }
