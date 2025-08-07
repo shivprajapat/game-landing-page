@@ -8,7 +8,7 @@ import { DownloadButton } from "@/components";
 
 const Banner = () => {
   return (
-    <section id="home" className="pb-7 md:pb-10 transition-all">
+    <section id="home" className="pb-7 md:pb-10">
       <div className="max-w-7xl px-4 mx-auto">
         <div className="flex flex-col-reverse md:flex-row">
           <div className="flex-auto md:flex-1/2">
@@ -27,7 +27,7 @@ const Banner = () => {
                 data-aos-duration="1000"
               >
                 <h1
-                  className="text-5xl md:leading-normal  xl:text-6xl text-white font-bold font-urbanist mb-5"
+                  className="text-5xl md:leading-normal xl:text-6xl text-white font-bold font-urbanist mb-5"
                   style={{
                     textShadow: "3px 2px 0 #9C9C9C",
                   }}

@@ -53,7 +53,7 @@ const InstallApp = () => {
                   className="object-contain w-full h-96"
                 />
                 <div className="mb-2 text-center w-full">
-                  <p className="text-[#ffcc37] trim-both font-bold text-xl sm:text-2xl mb-2">
+                  <p className="text-yellow-500 trim-both font-bold text-xl sm:text-2xl mb-2">
                     {item.step}
                   </p>
                   <p className="text-base font-normal text-white px-3 sm:px-0">
@@ -66,13 +66,13 @@ const InstallApp = () => {
         </Slider>
         <div className="flex-center  bg-black w-fit mx-auto px-3 py-2 rounded-full gap-3  mt-5">
           <button
-            className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-[#ffcc37] p-2"
+            className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-yellow-500 p-2"
             onClick={handlePrevClick}
           >
             <img src={IconLeftArrow} alt="Previous" width={20} height={20} />
           </button>
           <button
-            className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-[#ffcc37] p-2"
+            className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-yellow-500 p-2"
             onClick={handleNextClick}
           >
             <img src={IconRightArrow} alt="Next" width={20} height={20} />

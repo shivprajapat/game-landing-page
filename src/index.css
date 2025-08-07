@@ -189,3 +189,7 @@ button {
   clip-path: ellipse(50% 90% at 50% 100%);
   height: clamp(140px, 15vw, 200px);
 }
+
+.winnersCard-group:hover .winnersCard-group-hover {
+  color: white;
+}

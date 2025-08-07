@@ -114,13 +114,13 @@ const EnjoyGames = () => {
           </p>
           <div className="flex-center  bg-black w-fit mx-auto px-2 py-1 rounded-full gap-2 mt-3 xl:mt-5">
             <button
-              className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-[#ffcc37] p-2"
+              className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-yellow-500 p-2"
               onClick={handlePrevClick}
             >
               <img src={IconLeftArrow} alt="Previous" width={16} height={16} />
             </button>
             <button
-              className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-[#ffcc37] p-2"
+              className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-yellow-500 p-2"
               onClick={handleNextClick}
             >
               <img src={IconRightArrow} alt="Next" width={16} height={16} />
