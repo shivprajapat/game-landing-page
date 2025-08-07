@@ -5,7 +5,7 @@ import { IconClose, IconLogo, IconMenu } from "@/assets/images";
 import { Button } from ".";
 
 const Header = () => {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("home");
   const [toggle, setToggle] = useState(false);
   const [show, handleShow] = useState(false);
 
@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-30 transition-all duration-200 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-200 ${
         show && " bg-black"
       }`}
     >
@@ -52,7 +52,7 @@ const Header = () => {
             {navLinks.map(nav => (
               <li
                 key={nav.id}
-                className={`font-medium transition-all duration-150 cursor-pointer font-rubik text-[16px] hover:text-yellow-500 relative after:absolute after:-bottom-1 after:w-0 after:transition-all after:h-1 hover:after:w-full after:rounded-full after:left-0 after:bg-yellow-500 ${
+                className={`font-medium transition-all uppercase duration-150 cursor-pointer font-rubik text-[16px] hover:text-yellow-500 relative after:absolute after:-bottom-1 after:w-0 after:transition-all after:h-1 hover:after:w-full after:rounded-full after:left-0 after:bg-yellow-500 ${
                   active === nav.title
                     ? "text-yellow-500 after:w-full"
                     : "text-white"
