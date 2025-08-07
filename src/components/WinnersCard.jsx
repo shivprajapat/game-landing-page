@@ -16,7 +16,7 @@ const WinnersCard = ({ title, imageUrl, description }) => {
             {title}
           </p>
           <p className="text-[#047E1E] trim-both font-bold text-lg">
-            Won{" "}
+            Won
             <span className="font-extrabold font-basement-grotesque">₹</span>
             <span className="-ml-1"> 1,00,000 </span>
           </p>

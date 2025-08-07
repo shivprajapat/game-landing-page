@@ -1,3 +1,4 @@
+import { iconCircleDash, iconCirclePlus } from "@/assets/images";
 import React, { useState, useRef, useEffect } from "react";
 
 const AccordionItem = ({ title, content, isOpen, onClick }) => {
@@ -19,7 +20,9 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
         className="w-full text-left rounded px-4 py-3 bg-[#231616] flex justify-between items-center transition-colors"
       >
         <span className="font-extralight sm:font-medium">{title}</span>
-        <span className="text-xl">{isOpen ? "−" : "+"}</span>
+        <button className=" bg-white rounded-full size-7">
+          <img src={isOpen ? iconCircleDash : iconCirclePlus} alt="" />
+        </button>
       </button>
 
       <div

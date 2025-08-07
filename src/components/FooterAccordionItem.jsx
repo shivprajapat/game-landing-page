@@ -1,3 +1,4 @@
+import { iconCircleDash, iconCirclePlus } from "@/assets/images";
 import React, { useState, useRef, useEffect } from "react";
 
 const FooterAccordionItem = ({ title, content, isOpen, onClick }) => {
@@ -19,7 +20,9 @@ const FooterAccordionItem = ({ title, content, isOpen, onClick }) => {
         className="w-full text-left px-4 py-2 flex justify-between items-center transition-colors"
       >
         <span className="font-extralight">{title}</span>
-        <span className="text-xl">{isOpen ? "−" : "+"}</span>
+        <button className=" bg-white rounded-full size-7">
+          <img src={isOpen ? iconCircleDash : iconCirclePlus} alt="" />
+        </button>
       </button>
 
       <div
@@ -27,7 +30,7 @@ const FooterAccordionItem = ({ title, content, isOpen, onClick }) => {
         style={{
           maxHeight,
         }}
-        className="transition-all duration-500 ease-in-out overflow-hidden px-4 font-extralight text-sm bg-white text-black"
+        className="transition-all duration-500 ease-in-out overflow-hidden px-4 font-normal text-base bg-white text-black"
       >
         <div className="py-3">
           <ul className="flex items-start flex-wrap gap-x-5 gap-y-2">

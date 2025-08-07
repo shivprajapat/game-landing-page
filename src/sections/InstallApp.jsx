@@ -1,6 +1,8 @@
 import { IconLeftArrow, IconRightArrow } from "@/assets/images";
 import { Heading } from "@/components";
+import Tilt from "@/components/Tilt";
 import { howToInstallData } from "@/constants";
+import { tiltOption } from "@/constants/tiltOption";
 import { useSlider } from "@/hooks/useSlider";
 import React from "react";
 import Slider from "react-slick";
@@ -37,7 +39,7 @@ const InstallApp = () => {
   });
   return (
     <section className="py-5 md:py-8" id="install">
-      <div className="max-w-5xl lg:mx-auto mx-4 p-4 md:p-6 rounded-xl lg:p-10 bg-black">
+      <div className="max-w-5xl mx-auto p-4 md:p-6 rounded-xl lg:p-10 bg-black">
         <div className="mb-16" data-aos="fade-up">
           <Heading>How To Install</Heading>
         </div>
@@ -75,6 +77,32 @@ const InstallApp = () => {
           >
             <img src={IconRightArrow} alt="Next" width={20} height={20} />
           </button>
+        </div>
+      </div>
+      <div className="max-w-5xl mx-auto px-4 py-6 sm:py-10">
+        <div className="">
+          <Tilt className="box" options={tiltOption}>
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/online-gamming-11984841-9779170.png"
+              alt=""
+              className="mx-auto w-full max-w-lg"
+            />
+          </Tilt>
+          <div className="space-y-5 text-center">
+            <p className="text-base sm:text-lg font-normal">
+              WinZO offers skill-based games and formats, ensuring fairness and
+              safety. As a member of IEIC, WinZO guarantees the integrity of all
+              games on the platform. Trusted payment partners like PayTM, Google
+              Pay, PhonePe, and BHIM are available for secure transactions.
+              Fraudulent play is restricted through advanced fraud detection
+              mechanisms.
+            </p>
+            <p className="text-base sm:text-lg font-normal">
+              The WinZO app is accessible on Android and iOS. Android users can
+              download it from the Download Button on this page, while iOS users
+              can find it on the Apple App Store.
+            </p>
+          </div>
         </div>
       </div>
     </section>

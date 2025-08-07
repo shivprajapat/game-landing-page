@@ -20,6 +20,8 @@ import iconREFEREarn from "./icons/REFER-Earn.webp";
 import icon24X7Support from "./icons/24X7Support.webp";
 import iconLoader from "./icons/loader.svg";
 import iconStarEmoji from "./icons/emoji2.webp";
+import iconCirclePlus from "./icons/plus-circle.svg";
+import iconCircleDash from "./icons/dash-circle.svg";
 export {
   IconClose,
   IconMenu,
@@ -42,4 +44,6 @@ export {
   iconLoader,
   iconStarEmoji,
   ImageCertificate,
+  iconCircleDash,
+  iconCirclePlus,
 };

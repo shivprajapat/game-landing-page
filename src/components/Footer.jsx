@@ -56,7 +56,7 @@ const Footer = () => {
                         href={link.href}
                         target={link.target || "_self"}
                       >
-                        {link.title}{" "}
+                        {link.title}
                         {index < section.links.length - 1 && (
                           <span className="hidden sm:inline-block ml-2 !text-white">
                             |
@@ -163,7 +163,7 @@ const Footer = () => {
               target="_blank"
               className="text-primary px-1"
             >
-              Ludo Technologies Private Limited{" "}
+              Ludo Technologies Private Limited
             </a>
             | All Rights Reserved.
           </p>
@@ -173,8 +173,8 @@ const Footer = () => {
               className="text-white hover:text-yellow-500 transition-all "
             >
               Privacy Policy
-            </a>{" "}
-            |{" "}
+            </a>
+            |
             <a
               href=""
               className="text-white hover:text-yellow-500 transition-all "

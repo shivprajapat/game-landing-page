@@ -1,5 +1,7 @@
 import { ImageAbout } from "@/assets/images";
 import { Heading } from "@/components";
+import Tilt from "@/components/Tilt";
+import { tiltOption } from "@/constants/tiltOption";
 import React from "react";
 
 const About = () => {
@@ -36,7 +38,9 @@ const About = () => {
             data-aos-offset="500"
             data-aos-duration="2000"
           >
-            <img src={ImageAbout} alt="about" />
+            <Tilt className="box" options={tiltOption}>
+              <img src={ImageAbout} alt="about" />
+            </Tilt>
           </div>
         </div>
         <p></p>
