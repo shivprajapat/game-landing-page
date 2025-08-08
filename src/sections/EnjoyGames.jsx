@@ -21,42 +21,43 @@ const EnjoyGames = () => {
   }, []);
   const settings = {
     infinite: true,
-    slidesToShow: 4.2,
+    slidesToShow: 4.4,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     arrows: false,
     dots: false,
     speed: 2000,
     centerMode: true,
     autoplaySpeed: 2000,
-    // cssEase: "linear",
     waitForAnimate: false,
+    className: "center",
     beforeChange: (_, next) => setActiveIndex(next),
     responsive: [
+      { breakpoint: 1366, settings: { slidesToShow: 4.2 } },
       { breakpoint: 1199, settings: { slidesToShow: 4.2 } },
       { breakpoint: 1100, settings: { slidesToShow: 4 } },
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 3, centerPadding: "120px" },
+        settings: { slidesToShow: 3 },
       },
-      { breakpoint: 768, settings: { slidesToShow: 2.3 } },
+      { breakpoint: 768, settings: { slidesToShow: 3 } },
       {
         breakpoint: 576,
-        settings: { slidesToShow: 1, centerPadding: "100px" },
+        settings: { slidesToShow: 1, centerPadding: "70px" },
       },
     ],
   };
   return (
-    <section className="py-5 md:py-8 bg-[#231616] rounded-t-full relative">
+    <section className="py-8 sm:bg-[#231616] rounded-t-full relative">
       <div className="max-w-6xl px-4 mx-auto">
         <div className="relative sm:before:bg-white before:absolute before:bottom-7 before:h-[95%] before:w-full md:before:w-2/3 xl:before:w-2/5 before:left-1/2 before:-translate-x-1/2 before:rounded-t-4xl sm:p-5">
-          <div className="text-center mb-8 sm:mb-9">
+          <div className="text-center mb-5 sm:mb-9">
             <Heading className="!mb-2">
               <div
                 className="flex justify-center items-center gap-2 sm:text-black"
                 data-aos="fade-up"
               >
-                Enjoy 100+ Games
+                6+ Game Mode
                 <img
                   src="https://d3g4wmezrjkwkg.cloudfront.net/website/images/emoji1.webp?w=64&q=80"
                   alt=""
@@ -74,12 +75,13 @@ const EnjoyGames = () => {
               IN 15 LANGUAGES
             </span>
           </div>
-
-          {/* 👇 Slider */}
           <div className="z-20 top-slider relative">
             <Slider {...settings} ref={sliderRef}>
               {enjoyGamesSliderData.map((item, index) => (
-                <div key={index} className="relative slide-wrapper flex-center">
+                <div
+                  key={index}
+                  className="relative slide-wrapper !flex justify-center items-center"
+                >
                   <div className="slide-card w-full relative">
                     <div
                       className="size-full relative bg-no-repeat z-[1]"
@@ -102,30 +104,34 @@ const EnjoyGames = () => {
               ))}
             </Slider>
 
-            {/* 👇 External Text Based on Active Slide */}
+            <div className="flex-between w-full absolute top-1/2 translate-y-1/2">
+              <button
+                className="transition-all sm:-ml-4 duration-200 cursor-pointer rounded-full bg-yellow-500 p-2"
+                onClick={handlePrevClick}
+              >
+                <img
+                  src={IconLeftArrow}
+                  alt="Previous"
+                  width={16}
+                  height={16}
+                />
+              </button>
+              <button
+                className="transition-all duration-200 sm:-mr-0 cursor-pointer rounded-full bg-yellow-500 p-2"
+                onClick={handleNextClick}
+              >
+                <img src={IconRightArrow} alt="Next" width={16} height={16} />
+              </button>
+            </div>
           </div>
         </div>
-        <div className="absolute bottom-2 w-full lg:bottom-3 xl:bottom-8 left-1/2 -translate-x-1/2 z-30">
-          <p className="text-black font-bold text-xl md:text-2xl lg:text-3xl text-center">
+        <div className="absolute bottom-4 w-full md:bottom-8 lg:bottom-12 xl:bottom-16 left-1/2 -translate-x-1/2 z-30 px-8">
+          <p className="text-black font-medium text-sm md:text-base text-center">
             {
               enjoyGamesSliderData[activeIndex % enjoyGamesSliderData.length]
                 .text
             }
           </p>
-          <div className="flex-center  bg-black w-fit mx-auto px-2 py-1 rounded-full gap-2 mt-3 xl:mt-5">
-            <button
-              className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-yellow-500 p-2"
-              onClick={handlePrevClick}
-            >
-              <img src={IconLeftArrow} alt="Previous" width={16} height={16} />
-            </button>
-            <button
-              className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-yellow-500 p-2"
-              onClick={handleNextClick}
-            >
-              <img src={IconRightArrow} alt="Next" width={16} height={16} />
-            </button>
-          </div>
         </div>
       </div>
 

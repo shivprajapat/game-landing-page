@@ -1,40 +1,27 @@
 // import { IconAppStore, IconGooglePlay } from "@/assets/images";
 import { footerLinks, socialLinks } from "@/constants";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DownloadButton, MobileFooter } from ".";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import clsx from "clsx";
 
 const Footer = () => {
   const isMobile = useIsMobile(680);
-  const footerRef = useRef(null);
   const [showDownloadButton, setShowDownloadButton] = useState(false);
 
   useEffect(() => {
-    const target = footerRef.current;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowDownloadButton(entry.isIntersecting);
-      },
-      {
-        threshold: 0.1, // Trigger when 10% of footer is visible
-      },
-    );
-
-    if (target) {
-      observer.observe(target);
-    }
-
-    return () => {
-      if (target) {
-        observer.unobserve(target);
-      }
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const triggerPoint = 400; // pixels scrolled before showing button
+      setShowDownloadButton(scrollY > triggerPoint);
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <footer className="my-4 md:my-9" ref={footerRef}>
+    <footer className="my-4 md:my-9">
       <div className="max-w-7xl px-4 mx-auto">
         {!isMobile && (
           <div className="mb-5">
@@ -164,15 +151,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* {showDownloadButton && (
-        <div className="fixed bottom-1/4 right-2 z-50">
-          <DownloadButton />
-        </div>
-      )} */}
       <div
         className={`fixed right-2 z-50 duration-1000 transition-all ${
           showDownloadButton
-            ? "bottom-1/5 translate-y-0"
+            ? "bottom-1/2 translate-y-0"
             : "bottom-0 translate-y-full"
         }`}
       >

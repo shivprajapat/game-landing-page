@@ -74,7 +74,7 @@ const Banner = () => {
                 </svg>
               </Button> */}
               <div
-                className="sm:flex hidden"
+                className="md:flex hidden"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
@@ -96,13 +96,6 @@ const Banner = () => {
             data-aos-offset="500"
             data-aos-duration="1000"
           >
-            <div
-              className="sm:hidden flex"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-            >
-              <DownloadButton />
-            </div>
             <Tilt className="box" options={tiltOption}>
               <img
                 src={ImageBanner}

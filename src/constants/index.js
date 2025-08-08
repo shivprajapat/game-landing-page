@@ -30,34 +30,34 @@ const navLinks = [
 
 const enjoyGamesSliderData = [
   {
-    text: "Play Candy Match",
+    text: "Bid smart, win the right tricks, and outplay everyone to rule the leaderboard.",
     videoPoster:
-      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326844-1751983712383.png",
   },
   {
     text: "Try Puzzle Quest",
     videoPoster:
-      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326846-1751983712690.png",
   },
   {
     text: "Explore Word World",
     videoPoster:
-      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326842-1751983711420.png",
   },
   {
     text: "Adventure Race Time",
     videoPoster:
-      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326846-1751983712690.png",
   },
   {
     text: "Brain Trainer",
     videoPoster:
-      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326842-1751983711420.png",
   },
   {
     text: "Math Battle",
     videoPoster:
-      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
+      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326843-1751983712948.png",
   },
   {
     text: "Number Ninja",

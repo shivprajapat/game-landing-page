@@ -171,8 +171,8 @@ button {
 }
 .slide-card {
   position: relative;
-  height: clamp(380px, 19.5vw, 379px);
-  width: clamp(160px, 9vw, 183px);
+  height: clamp(350px, 19.5vw, 370px);
+  width: clamp(130px, 9vw, 160px);
   transition: all 0.5s ease;
   transform: scaleX(1.35);
   margin-top: 20%;
@@ -187,9 +187,22 @@ button {
 .enjoy-game-shape {
   -webkit-clip-path: ellipse(50% 90% at 50% 100%);
   clip-path: ellipse(50% 90% at 50% 100%);
-  height: clamp(140px, 15vw, 200px);
+  height: clamp(100px, 15vw, 170px);
 }
 
 .winnersCard-group:hover .winnersCard-group-hover {
   color: white;
+}
+@media only screen and (max-width: 600px) {
+  .enjoy-game-shape {
+    -webkit-clip-path: ellipse(50% 90% at 50% 100%);
+    clip-path: ellipse(60% 80% at 50% 100%);
+  }
+}
+
+.center .slide-card {
+  @apply relative before:rounded-[30px] before:absolute before:size-full before:bg-[#231616]/50 before:z-10;
+}
+.center .slick-center .slide-card {
+  @apply before:hidden;
 }

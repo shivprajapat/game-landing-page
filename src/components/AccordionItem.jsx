@@ -20,9 +20,9 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
         className="w-full text-left rounded px-4 py-3 bg-[#231616] flex justify-between items-center transition-colors"
       >
         <span className="font-extralight sm:font-medium">{title}</span>
-        <button className=" bg-white rounded-full size-7 min-w-7">
+        <span className=" bg-white rounded-full size-7 min-w-7">
           <img src={isOpen ? iconCircleDash : iconCirclePlus} alt="" />
-        </button>
+        </span>
       </button>
 
       <div
