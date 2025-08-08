@@ -32,12 +32,7 @@ const About = () => {
               fugit quos? Corrupti, excepturi?
             </p>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="2000"
-          >
+          <div data-aos="zoom-in-up">
             <Tilt className="box" options={tiltOption}>
               <img src={ImageAbout} alt="about" />
             </Tilt>

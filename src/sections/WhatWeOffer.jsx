@@ -54,23 +54,27 @@ const WhatWeOffer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <OfferCard
             imageSrc={icon100Secure}
-            heading="100% Secure"
+            heading="100%"
             duration="1000"
+            description="Secure"
           />
           <OfferCard
             imageSrc={iconRealPlayers}
-            heading="No Bots Real Players"
+            heading="No Bots"
             duration="2000"
+            description="Real Players"
           />
           <OfferCard
             imageSrc={iconREFEREarn}
-            heading="Refer & Earn"
+            heading="Refer"
             duration="3000"
+            description="& Earn"
           />
           <OfferCard
             imageSrc={icon24X7Support}
-            heading="24X7 Support"
-            duration="4000"
+            heading="24X7"
+            duration="3000"
+            description="Support"
           />
         </div>
       </div>

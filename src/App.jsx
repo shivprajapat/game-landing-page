@@ -22,9 +22,10 @@ const App = () => {
     AOS.init({
       // Optional configuration options
       duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should only happen once
+      // once: true, // Whether animation should only happen once
       offset: 200, // Offset (in px) from the top of the screen
     });
+    AOS.refresh();
     setLoading(true);
     setTimeout(() => {
       setLoading(false);

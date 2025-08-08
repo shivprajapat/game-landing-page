@@ -195,34 +195,43 @@ const howToInstallData = [
 
 const accordionData = [
   {
-    title: " What is Ziffi Chess? ",
+    title: "Is Ludo Players a safe social gaming platform?",
     content:
-      " Ziffi Chess is a fast, fun chess format where each player has only 6 moves to score the most points. It's perfect for quick games during short breaks. Play strategically and see if you can outscore your opponent in just a few moves! ",
+      "Ludo Players is an absolutely safe and secure social gaming platform which ensures that all the games listed on the platform are fair. We have enhanced levels of fraud detection mechanisms to restrict fraudulent play and/or players thereby making Ludo Players a fair and safe platform for playing 100+ social interactive games.",
   },
   {
-    title: "Can you make money playing online chess?",
+    title: "Can I pay-to-play on Ludo Players?",
     content:
-      "Yes, you can earn real money by entering cash battles and arenas in Ziffi Chess. If you win, you receive a cash prize, which is available for instant withdrawal.",
+      "Yes, Ludo Players offers free-to-play as well as pay-to-play format for their users.",
   },
   {
-    title: "How do you play online chess with friends?",
+    title: "How to deposit?",
     content:
-      "Invite your friends to join the same cash battle or arena in Ziffi Chess. You can compete in real-time matches and track your performance on the leaderboard together.",
+      "You can go to your Ludo Players wallet and enter the amount to be added through the multiple payment options available on the platform.",
   },
   {
-    title: "How can I learn chess for free?",
+    title: "How can a player withdraw their winnings?",
     content:
-      "Ziffi Chess offers free trial games to help you get started. You can also explore strategies and tips to improve your game before jumping into cash battles.",
+      "A player, after verification, can withdraw their winnings on Ludo Players through its withdrawal partners, namely- PayTM, Google Pay, PhonePe, UPI or directly to the linked bank account.",
   },
   {
-    title: "What are the benefits of playing Chess?",
+    title: "Will my winnings get credited immediately?",
     content:
-      "Play quick, fun games in just 6 moves. Earn real money by winning cash battles. Join tournaments and track your ranking. Compete with friends in real-time matches. Enjoy secure and instant withdrawals for your winnings.",
+      "Yes, the winnings are credited to your Ludo Players wallet or linked bank account immediately. If due to any fraud detection, your winnings are not credited, please wait for 24 hours. If the winnings have not been credited even after 24 hours, please contact our customer support teams.",
   },
   {
-    title: "What is 6-move chess?",
+    title: "Is Ludo Players available for Android as well as iOS devices?",
     content:
-      "Play quick, fun games in just 6 moves. Earn real money by winning cash battles. Join tournaments and track your ranking. Compete with friends in real-time matches. Enjoy secure and instant withdrawals for your winnings.",
+      "The Ludo Players app is available for both Android and iOS users. The app can be downloaded from our website. However, casual games that allow you to win money are not available on the Google Play Store.",
+  },
+  {
+    title: "How many games and formats are available on Ludo Players?",
+    content:
+      "Ludo Players offers 100+ games across 6 formats on its platform. The platform also delivers personalisation in the form of vernacularization and is available in 15 regional languages.",
+  },
+  {
+    title: "Is Ludo Players a member of the IEIC?",
+    content: "Yes, Ludo Players is a member of IEIC.",
   },
 ];
 

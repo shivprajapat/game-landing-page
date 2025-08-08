@@ -154,7 +154,7 @@ const Footer = () => {
       <div
         className={`fixed right-2 z-50 duration-1000 transition-all ${
           showDownloadButton
-            ? "bottom-1/2 translate-y-0"
+            ? "bottom-16 translate-y-0"
             : "bottom-0 translate-y-full"
         }`}
       >

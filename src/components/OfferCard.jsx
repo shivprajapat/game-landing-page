@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Tilt from "./Tilt";
 import { tiltOption } from "@/constants/tiltOption";
 
-const OfferCard = ({ imageSrc, heading, duration }) => {
+const OfferCard = ({ imageSrc, heading, duration, description }) => {
   const [active, setActive] = useState(false);
 
   const handleToggle = () => {
@@ -18,32 +18,38 @@ const OfferCard = ({ imageSrc, heading, duration }) => {
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
       >
-        <div className="relative overflow-hidden h-60 sm:h-80 rounded-3xl cursor-pointer bg-black">
-          <div className="z-10 absolute w-full h-full" />
-
-          {/* First Animation Circle */}
+        <div className="relative overflow-hidden h-52 sm:h-60 rounded-3xl cursor-pointer bg-[#231616] shadow">
           <div
-            className={`absolute transition-all duration-500 rounded-full bg-primary ${
-              active
-                ? "-top-20 -left-16 w-[145%] h-[145%]"
-                : "-top-32 -left-16 w-32 h-44"
-            }`}
+            className={`absolute rounded-full transition-all duration-300 ease-in-out font-bold text-black flex text-center
+               ${
+                 active
+                   ? "right-0 bg-yellow-500 bottom-0 items-center justify-center w-full h-full rounded-b-none"
+                   : "-bottom-32 bg-yellow-500 -right-16 w-36 items-end justify-end"
+               }
+            `}
           />
-
-          {/* Second Animation Circle with Text */}
           <div
-            className={`absolute transition-all duration-500 font-bold text-black flex text-center ${
-              active
-                ? "right-0 bottom-0 items-center justify-center w-full h-full text-xl sm:text-3xl rounded-b-none"
-                : "-bottom-32 -right-16 w-36 h-44 items-end justify-end"
-            } bg-primary rounded-full`}
+            className={`w-full h-full items-center justify-center flex px-3 text-center relative ${
+              active && "z-10"
+            }`}
           >
-            <h5 className="transition-all duration-500">{heading}</h5>
-          </div>
-
-          {/* Image Content */}
-          <div className="w-full h-full items-center justify-center flex uppercase">
-            <img src={imageSrc} alt="offer" />
+            <div>
+              <img
+                src={imageSrc}
+                alt="offer"
+                className="max-w-40 mx-auto mb-3"
+              />
+              <h5 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+                {heading}
+              </h5>
+              <p
+                className={`text-base font-normal ${
+                  active ? "text-white" : "text-slate-400"
+                }`}
+              >
+                {description}
+              </p>
+            </div>
           </div>
         </div>
       </div>

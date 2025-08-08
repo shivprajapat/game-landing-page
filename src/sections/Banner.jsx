@@ -73,13 +73,13 @@ const Banner = () => {
                   </g>
                 </svg>
               </Button> */}
-              <div
+              {/* <div
                 className="md:flex hidden"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
                 <DownloadButton />
-              </div>
+              </div> */}
             </div>
             <div data-aos="fade-up" data-aos-duration="2000">
               <img
@@ -92,8 +92,8 @@ const Banner = () => {
           <div
             className="h-full flex-auto md:flex-1/2 max-w-6xl mx-auto w-full"
             data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
+            // data-aos-anchor="#example-anchor"
+            // data-aos-offset="500"
             data-aos-duration="1000"
           >
             <Tilt className="box" options={tiltOption}>

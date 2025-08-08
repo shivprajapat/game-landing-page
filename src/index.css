@@ -152,7 +152,7 @@ button {
   animation: text-rotation 8s linear infinite;
 
   > span {
-    transform: rotate(calc(19deg * var(--index)));
+    transform: rotate(calc(20deg * var(--index)));
   }
 }
 .button__icon--copy {
