@@ -1,4 +1,4 @@
-import { IconLeftArrow, IconRightArrow } from "@/assets/images";
+import { iconLeftArrow, iconRightArrow } from "@/assets/images";
 import { Heading } from "@/components";
 import { enjoyGamesSliderData } from "@/constants";
 import React, { useCallback, useRef, useState } from "react";
@@ -110,7 +110,7 @@ const EnjoyGames = () => {
                 onClick={handlePrevClick}
               >
                 <img
-                  src={IconLeftArrow}
+                  src={iconLeftArrow}
                   alt="Previous"
                   width={16}
                   height={16}
@@ -120,7 +120,7 @@ const EnjoyGames = () => {
                 className="transition-all duration-200 sm:-mr-0 cursor-pointer rounded-full bg-yellow-500 p-2"
                 onClick={handleNextClick}
               >
-                <img src={IconRightArrow} alt="Next" width={16} height={16} />
+                <img src={iconRightArrow} alt="Next" width={16} height={16} />
               </button>
             </div>
           </div>

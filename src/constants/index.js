@@ -1,8 +1,8 @@
 import {
-  IconFacebook,
-  IconLinkedin,
-  IconTwitter,
-  IconYoutube,
+  iconFacebook,
+  iconLinkedin,
+  iconTwitter,
+  iconYoutube,
 } from "@/assets/images";
 
 const navLinks = [
@@ -238,22 +238,22 @@ const accordionData = [
 const socialLinks = [
   {
     href: "https://www.facebook.com/ludo",
-    icon: IconFacebook,
+    icon: iconFacebook,
     bgColor: "#1877F2", // Facebook blue (hex code)
   },
   {
     href: "https://www.linkedin.com/company/ludo/",
-    icon: IconLinkedin,
+    icon: iconLinkedin,
     bgColor: "#0A66C2", // LinkedIn blue (hex code)
   },
   {
     href: "https://www.youtube.com/@ludo",
-    icon: IconYoutube,
+    icon: iconYoutube,
     bgColor: "#FF0000", // YouTube red (hex code)
   },
   {
     href: "https://x.com/ludo",
-    icon: IconTwitter,
+    icon: iconTwitter,
     bgColor: "#1DA1F2", // Twitter blue (hex code)
   },
 ];

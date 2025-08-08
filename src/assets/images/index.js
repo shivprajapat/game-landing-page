@@ -1,12 +1,12 @@
-import IconClose from "./icons/close.svg";
-import IconMenu from "./icons/menu.svg";
-import IconLogo from "./icons/logo.webp";
-import IconFacebook from "./icons/facebook.svg";
-import IconYoutube from "./icons/youtube.svg";
-import IconLinkedin from "./icons/linkedin.svg";
-import IconTwitter from "./icons/twitter.svg";
-import IconLeftArrow from "./icons/left-arrow.svg";
-import IconRightArrow from "./icons/right-arrow.svg";
+import iconClose from "./icons/close.svg";
+import iconMenu from "./icons/menu.svg";
+import iconLogo from "./icons/logo.webp";
+import iconFacebook from "./icons/facebook.svg";
+import iconYoutube from "./icons/youtube.svg";
+import iconLinkedin from "./icons/linkedin.svg";
+import iconTwitter from "./icons/twitter.svg";
+import iconLeftArrow from "./icons/left-arrow.svg";
+import iconRightArrow from "./icons/right-arrow.svg";
 import ImageBanner from "./banner-image.png";
 import ImagePayments from "./payments.webp";
 import ImageAbout from "./about.png";
@@ -20,17 +20,20 @@ import iconLoader from "./icons/loader.svg";
 import iconStarEmoji from "./icons/emoji2.webp";
 import iconCirclePlus from "./icons/plus-circle.svg";
 import iconCircleDash from "./icons/dash-circle.svg";
+import iconAndroid from "./icons/android.png";
+import iconDownload from "./icons/download.webp";
+
 export {
-  IconClose,
-  IconMenu,
-  IconLogo,
-  IconFacebook,
-  IconLinkedin,
-  IconTwitter,
-  IconYoutube,
+  iconClose,
+  iconMenu,
+  iconLogo,
+  iconFacebook,
+  iconLinkedin,
+  iconTwitter,
+  iconYoutube,
   ImageBanner,
-  IconLeftArrow,
-  IconRightArrow,
+  iconLeftArrow,
+  iconRightArrow,
   ImagePayments,
   icon100Secure,
   icon24X7Support,
@@ -42,4 +45,6 @@ export {
   ImageCertificate,
   iconCircleDash,
   iconCirclePlus,
+  iconAndroid,
+  iconDownload,
 };

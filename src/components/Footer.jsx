@@ -1,9 +1,10 @@
 // import { IconAppStore, IconGooglePlay } from "@/assets/images";
 import { footerLinks, socialLinks } from "@/constants";
 import React, { useEffect, useState } from "react";
-import { DownloadButton, MobileFooter } from ".";
+import { MobileFooter } from ".";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import clsx from "clsx";
+import { iconAndroid, iconDownload } from "@/assets/images";
 
 const Footer = () => {
   const isMobile = useIsMobile(680);
@@ -12,7 +13,7 @@ const Footer = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const triggerPoint = 400; // pixels scrolled before showing button
+      const triggerPoint = 100; // pixels scrolled before showing button
       setShowDownloadButton(scrollY > triggerPoint);
     };
 
@@ -151,15 +152,21 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div
-        className={`fixed right-2 z-50 duration-1000 transition-all ${
-          showDownloadButton
-            ? "bottom-16 translate-y-0"
-            : "bottom-0 translate-y-full"
-        }`}
-      >
-        <DownloadButton />
-      </div>
+      {isMobile && (
+        <div
+          className={`fixed lef-0 w-full px-4 z-50 duration-1000 transition-all ${
+            showDownloadButton
+              ? "bottom-6 translate-y-0"
+              : "-bottom-10 translate-y-full"
+          }`}
+        >
+          <button className="download__btn bg-[#E79021] w-full rounded-md uppercase italic px-3 py-3 text-xl font-medium flex-center gap-2 animate-bounce">
+            <img src={iconAndroid} alt="" width={28} height={28} />
+            <span> Get Download Link</span>
+            <img src={iconDownload} alt="" width={28} height={28} />
+          </button>
+        </div>
+      )}
     </footer>
   );
 };

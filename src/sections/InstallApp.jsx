@@ -1,4 +1,4 @@
-import { IconLeftArrow, IconRightArrow } from "@/assets/images";
+import { iconLeftArrow, iconRightArrow } from "@/assets/images";
 import { Heading } from "@/components";
 import Tilt from "@/components/Tilt";
 import { howToInstallData } from "@/constants";
@@ -69,13 +69,13 @@ const InstallApp = () => {
             className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-yellow-500 p-2"
             onClick={handlePrevClick}
           >
-            <img src={IconLeftArrow} alt="Previous" width={20} height={20} />
+            <img src={iconLeftArrow} alt="Previous" width={20} height={20} />
           </button>
           <button
             className="bg-[#212529] transition-all duration-200 cursor-pointer rounded-full hover:bg-yellow-500 p-2"
             onClick={handleNextClick}
           >
-            <img src={IconRightArrow} alt="Next" width={20} height={20} />
+            <img src={iconRightArrow} alt="Next" width={20} height={20} />
           </button>
         </div>
       </div>

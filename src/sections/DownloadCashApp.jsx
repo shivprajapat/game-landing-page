@@ -24,7 +24,7 @@ const DownloadCashApp = () => {
               </div>
             </div>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-black text-left font-bold w-full sm:w-fit">
-              Scan Code to Download <br /> Ludo Cash App NoW!
+              Scan Code to Download <br /> Ludo Cash App Now!
             </h2>
           </div>
           <div

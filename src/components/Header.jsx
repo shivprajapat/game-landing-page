@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { navLinks } from "@/constants";
-import { IconClose, IconLogo, IconMenu } from "@/assets/images";
+import { iconClose, iconLogo, iconMenu } from "@/assets/images";
 import { Button } from ".";
 
 const Header = () => {
@@ -38,7 +38,7 @@ const Header = () => {
         <nav className="w-full flex py-2 justify-between items-center">
           <a href="#" data-aos="fade-down">
             <img
-              src={IconLogo}
+              src={iconLogo}
               alt="logo"
               className={`transition-all duration-200 ${
                 show ? "sm:w-14 w-16" : "sm:w-14 w-16 md:w-20"
@@ -76,7 +76,7 @@ const Header = () => {
             </div>
             <div className="sm:hidden flex justify-end items-center">
               <img
-                src={toggle ? IconClose : IconMenu}
+                src={toggle ? iconClose : iconMenu}
                 alt="menu"
                 className=" object-contain"
                 width={24}

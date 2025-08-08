@@ -4,7 +4,6 @@ import Typewriter from "typewriter-effect";
 import React from "react";
 import { tiltOption } from "@/constants/tiltOption";
 import Tilt from "@/components/Tilt";
-import { DownloadButton } from "@/components";
 
 const Banner = () => {
   return (
@@ -73,13 +72,6 @@ const Banner = () => {
                   </g>
                 </svg>
               </Button> */}
-              {/* <div
-                className="md:flex hidden"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <DownloadButton />
-              </div> */}
             </div>
             <div data-aos="fade-up" data-aos-duration="2000">
               <img

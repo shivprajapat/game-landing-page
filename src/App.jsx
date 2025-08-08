@@ -16,7 +16,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useIsMobile } from "./hooks/useIsMobile";
 const App = () => {
+  const isMobile = useIsMobile(680);
+
   let [loading, setLoading] = useState(false);
   useEffect(() => {
     AOS.init({
@@ -26,10 +29,11 @@ const App = () => {
       offset: 200, // Offset (in px) from the top of the screen
     });
     AOS.refresh();
+
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3000);
   }, []);
   return (
     <Fragment>
@@ -48,7 +52,7 @@ const App = () => {
             <InstallApp />
             <InstantWithDrawal />
             <FAQ />
-            <ScrollArrow />
+            {!isMobile && <ScrollArrow />}
           </main>
           <Footer />
         </>

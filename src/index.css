@@ -144,11 +144,11 @@ button {
   animation-iteration-count: infinite;
   animation-name: sweep;
   animation-timing-function: linear;
-  border-radius: 15px 0 15px 15px;
+  /* border-radius: 15px 0 15px 15px; */
   @apply relative px-3 md:px-6 py-2 md:py-2.5 border-2 border-white text-sm md:text-base;
 }
 
-.button__text {
+/* .button__text {
   animation: text-rotation 8s linear infinite;
 
   > span {
@@ -164,7 +164,7 @@ button {
   to {
     rotate: 360deg;
   }
-}
+} */
 
 .slide-wrapper {
   height: clamp(385px, 28.8vw, 550px);
@@ -205,4 +205,8 @@ button {
 }
 .center .slick-center .slide-card {
   @apply before:hidden;
+}
+
+.download__btn {
+  box-shadow: 0 3px 0.5px #e79021bf;
 }
