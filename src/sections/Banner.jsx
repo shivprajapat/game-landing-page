@@ -27,7 +27,7 @@ const Banner = () => {
                 data-aos-duration="1000"
               >
                 <h1
-                  className="text-5xl md:leading-normal xl:text-6xl text-white font-bold font-urbanist mb-5"
+                  className="text-5xl h-28 sm:h-auto md:leading-normal xl:text-6xl text-white font-bold font-urbanist mb-5"
                   style={{
                     textShadow: "3px 2px 0 #9C9C9C",
                   }}

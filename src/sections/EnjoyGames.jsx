@@ -125,17 +125,21 @@ const EnjoyGames = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-4 w-full md:bottom-8 lg:bottom-12 xl:bottom-16 left-1/2 -translate-x-1/2 z-30 px-8">
+        {/* <div className="absolute bottom-4 w-full md:bottom-8 lg:bottom-12 xl:bottom-16 left-1/2 -translate-x-1/2 z-30 px-8">
           <p className="text-black font-medium text-sm md:text-base text-center">
             {
               enjoyGamesSliderData[activeIndex % enjoyGamesSliderData.length]
                 .text
             }
           </p>
-        </div>
+        </div> */}
       </div>
 
-      <div className="enjoy-game-shape w-full absolute bottom-0 left-0 z-20 bg-[#f1b300]" />
+      <div className="enjoy-game-shape w-full absolute bottom-0 left-0 z-20 bg-[#f1b300] flex-center">
+        <p className="text-black font-medium text-sm md:text-base text-center mt-6 px-5">
+          {enjoyGamesSliderData[activeIndex % enjoyGamesSliderData.length].text}
+        </p>
+      </div>
     </section>
   );
 };

@@ -41,7 +41,7 @@ const Header = () => {
               src={IconLogo}
               alt="logo"
               className={`transition-all duration-200 ${
-                show ? "w-[70px]" : "w-[70px] md:w-20"
+                show ? "sm:w-14 w-16" : "sm:w-14 w-16 md:w-20"
               }`}
             />
           </a>
