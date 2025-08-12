@@ -78,7 +78,7 @@ const Header = () => {
               <img
                 src={toggle ? iconClose : iconMenu}
                 alt="menu"
-                className=" object-contain"
+                className="object-contain"
                 width={24}
                 height={24}
                 onClick={() => setToggle(!toggle)}

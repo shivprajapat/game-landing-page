@@ -30,39 +30,34 @@ const navLinks = [
 
 const enjoyGamesSliderData = [
   {
-    text: "Bid smart, win the right tricks, and outplay everyone to rule the leaderboard.",
+    text: "Classic Lite",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326844-1751983712383.png",
   },
   {
-    text: "Try Puzzle Quest",
+    text: "Classic Rich",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326846-1751983712690.png",
   },
   {
-    text: "Explore Word World",
+    text: "Classic App Mode",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326842-1751983711420.png",
   },
   {
-    text: "Adventure Race Time",
+    text: "Ludo League",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326846-1751983712690.png",
   },
   {
-    text: "Brain Trainer",
+    text: "1 Token Ludo",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326842-1751983711420.png",
   },
   {
-    text: "Math Battle",
+    text: "Snakes Sprint",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326843-1751983712948.png",
-  },
-  {
-    text: "Number Ninja",
-    videoPoster:
-      "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326845-1751983712098.png",
   },
 ];
 const winnersData = [

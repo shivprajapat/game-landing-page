@@ -30,7 +30,7 @@ const Footer = () => {
               <div
                 key={section.heading}
                 className={clsx(
-                  index < footerLinks.length - 1 && "mb-3 md:mb-5",
+                  index < footerLinks.length - 1 && "mb-3 md:mb-5"
                 )}
               >
                 <h3 className="text-xl md:text-2xl font-semibold text-primary mb-2">
@@ -154,7 +154,7 @@ const Footer = () => {
       </div>
       {isMobile && (
         <div
-          className={`fixed lef-0 w-full px-4 z-50 duration-1000 transition-all ${
+          className={`fixed left-0 w-full px-4 z-50 duration-1000 transition-all ${
             showDownloadButton
               ? "bottom-6 translate-y-0"
               : "-bottom-10 translate-y-full"

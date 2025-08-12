@@ -36,7 +36,7 @@ const WhatWeOffer = () => {
     <section className="py-5 md:py-8" id="offers">
       <div className="max-w-5xl px-4 mx-auto">
         <div
-          className="text-center mb-5"
+          className="text-center mb-5 md:mb-10"
           data-aos="fade-up"
           data-aos-duration="1000"
         >

@@ -139,13 +139,13 @@ button {
     ),
     #ffea01;
   animation-duration: 100s;
-  box-shadow: 0 10px 15px #262626;
+  box-shadow: 0 3px 0.5px #ffe7018f;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: sweep;
   animation-timing-function: linear;
   /* border-radius: 15px 0 15px 15px; */
-  @apply relative px-3 md:px-6 py-2 md:py-2.5 border-2 border-white text-sm md:text-base;
+  @apply relative px-3 md:px-6 py-2 md:py-2.5 text-sm md:text-base;
 }
 
 /* .button__text {
@@ -166,9 +166,9 @@ button {
   }
 } */
 
-.slide-wrapper {
-  height: clamp(385px, 28.8vw, 550px);
-}
+  /* .slide-wrapper {
+    height: clamp(385px, 28.8vw, 550px);
+  } */
 .slide-card {
   position: relative;
   height: clamp(350px, 19.5vw, 370px);
@@ -209,4 +209,9 @@ button {
 
 .download__btn {
   box-shadow: 0 3px 0.5px #e79021bf;
+}
+
+.enjoy-language-bg::before{
+  background: url('./assets/images/language-bg.png');
+  @apply bg-cover
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const WinnersCard = ({ title, imageUrl, description }) => {
   return (
-    <div className="card block relative bg-white border rounded-lg z-10 overflow-hidden p-5 before:absolute before:-z-10 before:-top-4 before:-right-4 before:size-8 before:rounded-4xl before:scale-100 before:bg-black hover:border-[#212529] winnersCard-group mx-1 sm:mx-2 border-transparent">
+    <div className="card block relative bg-white  rounded-lg z-10 overflow-hidden p-5 before:absolute before:-z-10 before:-top-4 before:-right-4 before:size-8 before:rounded-4xl before:scale-100 before:bg-black hover:border-[#212529] winnersCard-group mx-1 sm:mx-2">
       <div className="flex w-full items-center gap-x-2">
         <img
           src={imageUrl}
