@@ -248,7 +248,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white);
+  color: black;
   text-decoration: none;
   font-size: 21px;
   font-weight: 600;
