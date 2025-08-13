@@ -9,11 +9,11 @@ import {
 } from "@/assets/images";
 
 const messages = [
-  "Naresh from Odisha won ₹844 in 3 Days",
-  "Rajendra from Madhya Pradesh won ₹723 in 3 Days",
-  "Guddu from Madhya Pradesh won ₹1620 in 4 Days",
-  "Kalicharan from Odisha won ₹553 in 7 Days",
-  "Mahendra from Rajasthan won ₹1233 in 7 Days",
+  'Naresh from Odisha won <span class="text-green-500">₹844</span> in 3 Days',
+  'Rajendra from Madhya Pradesh won <span class="text-green-500">₹723</span> in 3 Days',
+  'Guddu from Madhya Pradesh won <span class="text-green-500">₹1620</span> in 4 Days',
+  'Kalicharan from Odisha won <span class="text-green-500">₹553</span> in 7 Days',
+  'Mahendra from Rajasthan won <span class="text-green-500">₹1233</span> in 7 Days',
 ];
 const WhatWeOffer = () => {
   const [index, setIndex] = useState(0);
@@ -24,7 +24,7 @@ const WhatWeOffer = () => {
       setFade(false);
 
       setTimeout(() => {
-        setIndex(prev => (prev + 1) % messages.length);
+        setIndex((prev) => (prev + 1) % messages.length);
         setFade(true);
       }, 300);
     }, 3000);
@@ -46,9 +46,10 @@ const WhatWeOffer = () => {
               fade ? "opacity-100" : "opacity-0"
             }`}
           >
-            <p className="text-white uppercase text-sm font-medium font-urbanist">
-              {messages[index]}
-            </p>
+            <p
+              className="text-white uppercase text-sm font-medium font-urbanist"
+              dangerouslySetInnerHTML={{ __html: messages[index] }}
+            />
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

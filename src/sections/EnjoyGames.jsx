@@ -27,7 +27,7 @@ const EnjoyGames = () => {
     // autoplay: true,
     arrows: false,
     dots: false,
-    speed: 2000,
+    speed: 500,
     centerMode: true,
     autoplaySpeed: 2000,
     // waitForAnimate: true,
@@ -49,8 +49,8 @@ const EnjoyGames = () => {
     ],
   };
   return (
-    <section className="py-8 md:py-12 relative">
-      <div className="max-w-6xl px-4 mx-auto">
+    <section className="pt-12 md:pt-12 md:pb-12 relative">
+      <div className="max-w-6xl px-4 mx-auto relative">
         <div className="relative sm:before:bg-white before:absolute before:bottom-7 before:h-[95%] before:w-full md:before:w-2/3 xl:before:w-2/5 before:left-1/2 before:-translate-x-1/2 before:rounded-t-4xl sm:p-5 enjoy-language-bg">
           {/* <div className="absolute w-full md:w-2/3 xl:w-2/5 left-1/2 -translate-x-1/2 bg-red-500 h-full">
           <span>E</span>
@@ -130,20 +130,18 @@ const EnjoyGames = () => {
             </div>
           </div>
         </div>
-        {/* <div className="absolute bottom-4 w-full md:bottom-8 lg:bottom-12 xl:bottom-16 left-1/2 -translate-x-1/2 z-30 px-8">
-          <p className="text-black font-medium text-sm md:text-base text-center">
+        <div className="w-fit mx-auto -mt-5 z-20 flex-center flex-col">
+          <img
+            src="https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Ludo%20(1)-1751983863981.png?w=128&q=80"
+            alt=""
+          />
+          <p className="text-white font-medium text-sm md:text-xl text-center mt-3 px-5">
             {
               enjoyGamesSliderData[activeIndex % enjoyGamesSliderData.length]
                 .text
             }
           </p>
-        </div> */}
-      </div>
-
-      <div className="enjoy-game-shape w-full absolute bottom-0 left-0 z-20 bg-[#f1b300] flex-center">
-        <p className="text-black font-medium text-sm md:text-base text-center mt-6 px-5">
-          {enjoyGamesSliderData[activeIndex % enjoyGamesSliderData.length].text}
-        </p>
+        </div>
       </div>
     </section>
   );

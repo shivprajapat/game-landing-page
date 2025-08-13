@@ -49,7 +49,7 @@ const Header = () => {
             className="list-none transition-all duration-200 gap-6 md:gap-7 lg:gap-10 xl:gap-14 sm:flex hidden justify-end items-center"
             data-aos="fade-down"
           >
-            {navLinks.map(nav => (
+            {navLinks.map((nav) => (
               <li
                 key={nav.id}
                 className={`font-medium transition-all uppercase duration-150 cursor-pointer font-rubik text-[16px] hover:text-yellow-500 relative after:absolute after:-bottom-1 after:w-0 after:transition-all after:h-1 hover:after:w-full after:rounded-full after:left-0 after:bg-yellow-500 ${
@@ -69,7 +69,7 @@ const Header = () => {
               className="flex items-center gap-2 sm:gap-3"
               data-aos="fade-down"
             >
-              <Button className="download-btn">Download</Button>
+              <Button className="download-btn">Sign Up</Button>
               <a href="https://ludoplayers.com/login" target="_blank">
                 <Button className="download-btn">Login</Button>
               </a>

@@ -141,7 +141,7 @@ const Footer = () => {
             >
               Privacy Policy
             </a>
-            |
+            <span className="inline-block w-3">|</span>
             <a
               href=""
               className="text-white hover:text-yellow-500 transition-all "
@@ -153,24 +153,24 @@ const Footer = () => {
       </div>
       {isMobile && (
         <div
-          className={`fixed left-0 w-full z-50 duration-500 flex flex-col bg-primary px-3 py-5 transition-all ${
+          className={`fixed left-0 w-full z-50 duration-500 flex flex-col bg-[#f1b300] p-3 transition-all ${
             showDownloadButton
               ? "bottom-0 translate-y-0"
               : "-bottom-10 translate-y-full"
           }`}
         >
-          <span className="download-heading text-xl font-semibold text-black block mb-2 text-center">
+          <span className="download-heading text-base font-semibold text-black block mb-2 text-center">
             Get ₹ 20 Free
           </span>
-          <div className="style_mobileButton__yeaoK sonar-wrapper">
-            <div class="downloadapk flex-center overflow-hidden relative bg-[#1c0101]">
-              <div class=" style_downloadbtn__WJeiu">
+          <div className="relative z-0 overflow-hidden">
+            <div class="downloadapk flex-center overflow-hidden relative bg-black">
+              <div class="style_downloadbtn__WJeiu rounded-full flex-center gap-2 text-lg font-medium">
                 <img
                   src="https://static-perf1.zupee.com/wp-content/uploads/2024/01/android-icon-001-51.gif"
                   alt=""
-                  className="size-8 brightness-0"
+                  className="size-7"
                 />
-                <span>Download App</span>
+                <span className="text-white">Download App</span>
               </div>
             </div>
             <div class="sonar-wave sonar-wave1" />

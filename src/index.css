@@ -171,21 +171,21 @@ button {
 .slick-slide.slick-active.slick-center.slick-current .slide-card {
   @apply opacity-100  mt-0 z-50;
 }
-.enjoy-game-shape {
+/* .enjoy-game-shape {
   -webkit-clip-path: ellipse(50% 90% at 50% 100%);
   clip-path: ellipse(50% 90% at 50% 100%);
   height: clamp(100px, 15vw, 170px);
-}
+} */
 
 .winnersCard-group:hover .winnersCard-group-hover {
   color: white;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .enjoy-game-shape {
     -webkit-clip-path: ellipse(50% 90% at 50% 100%);
     clip-path: ellipse(60% 80% at 50% 100%);
   }
-}
+} */
 
 .center .slide-card {
   @apply relative before:rounded-[30px] before:absolute before:size-full before:bg-[#231616]/50 before:z-10;
@@ -226,7 +226,7 @@ button {
 .downloadapk {
   margin: 20px auto;
   width: calc(100% - 40px);
-  height: 52px;
+  height: 50px;
   border-radius: 100px;
 }
 .downloadapk:after,
@@ -241,27 +241,6 @@ button {
   transform: skew(-30deg);
   z-index: 1;
   filter: blur(3px);
-}
-.style_downloadbtn__WJeiu {
-  background: #f1b300;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  text-decoration: none;
-  font-size: 21px;
-  font-weight: 600;
-  font-family: Inter, sans-serif;
-  line-height: 21px;
-  width: 100%;
-  height: 60px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  column-gap: 1ch;
-  text-transform: capitalize;
-  padding: 0 15px;
 }
 .downloadapk:before {
   width: 35px;
@@ -294,18 +273,12 @@ button {
     left: 160%;
   }
 }
-.sonar-wrapper {
-  max-width: 100% !important;
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-}
 .sonar-wave {
   position: absolute;
   top: 20px;
   left: 20px;
   width: calc(100% - 40px);
-  height: 52px;
+  height: 50px;
   border-radius: 9999px;
   background-color: #a6843c;
   opacity: 0;
