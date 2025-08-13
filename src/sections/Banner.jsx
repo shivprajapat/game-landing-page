@@ -7,7 +7,7 @@ import Tilt from "@/components/Tilt";
 
 const Banner = () => {
   return (
-    <section id="home" className="pb-7 md:pb-10 min-h-screen">
+    <section id="home" className="pb-7 md:pb-10">
       <div className="max-w-7xl px-4 mx-auto">
         <div className="flex flex-col-reverse md:flex-row">
           <div className="flex-auto md:flex-1/2" data-aos="fade-right">
