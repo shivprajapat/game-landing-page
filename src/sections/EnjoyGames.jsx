@@ -30,7 +30,7 @@ const EnjoyGames = () => {
     speed: 2000,
     centerMode: true,
     autoplaySpeed: 2000,
-    waitForAnimate: false,
+    // waitForAnimate: true,
     className: "center",
     beforeChange: (_, next) => setActiveIndex(next),
     responsive: [
@@ -51,9 +51,8 @@ const EnjoyGames = () => {
   return (
     <section className="py-8 md:py-12 relative">
       <div className="max-w-6xl px-4 mx-auto">
-        <div className="relative sm:before:bg-white before:absolute before:bottom-7 before:h-[95%] before:w-full md:before:w-2/3 xl:before:w-2/5 before:left-1/2 before:-translate-x-1/2 before:rounded-t-4xl sm:p-5 enjoy-language-bg"
->
-        {/* <div className="absolute w-full md:w-2/3 xl:w-2/5 left-1/2 -translate-x-1/2 bg-red-500 h-full">
+        <div className="relative sm:before:bg-white before:absolute before:bottom-7 before:h-[95%] before:w-full md:before:w-2/3 xl:before:w-2/5 before:left-1/2 before:-translate-x-1/2 before:rounded-t-4xl sm:p-5 enjoy-language-bg">
+          {/* <div className="absolute w-full md:w-2/3 xl:w-2/5 left-1/2 -translate-x-1/2 bg-red-500 h-full">
           <span>E</span>
           <span>H</span>
         </div> */}
