@@ -7,24 +7,17 @@ import Tilt from "@/components/Tilt";
 
 const Banner = () => {
   return (
-    <section id="home" className="pb-7 md:pb-10">
+    <section id="home" className="pb-7 md:pb-10 min-h-screen">
       <div className="max-w-7xl px-4 mx-auto">
         <div className="flex flex-col-reverse md:flex-row">
-          <div className="flex-auto md:flex-1/2">
+          <div className="flex-auto md:flex-1/2" data-aos="fade-right">
             <div className="mt-8 mb-6 md:mt-0 md:mb-8">
-              <div
-                className="bg-black border border-primary shadow px-4 py-2 w-fit rounded-full p-[1px] mb-5"
-                data-aos="fade-up"
-              >
+              <div className="bg-black border border-primary shadow px-4 py-2 w-fit rounded-full p-[1px] mb-5">
                 <p className="text-white uppercase text-base sm:text-lg font-semibold font-urbanist">
                   Play Ludo & Win Real Money
                 </p>
               </div>
-              <div
-                className="mb-5 md:mb-10"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
+              <div className="mb-5 md:mb-10">
                 <h1
                   className="text-5xl h-28 sm:h-auto md:leading-normal xl:text-6xl text-white font-bold font-urbanist mb-5"
                   style={{
@@ -49,7 +42,7 @@ const Banner = () => {
               </div>
               {/* <Button
                 className="font-semibold items-center inline-flex gap-1"
-                data-aos="fade-up"
+                
                 data-aos-duration="2000"
               >
                 <span>Get Download link</span>
@@ -73,7 +66,7 @@ const Banner = () => {
                 </svg>
               </Button> */}
             </div>
-            <div data-aos="fade-up" data-aos-duration="2000">
+            <div>
               <img
                 src={ImageCertificate}
                 alt="certificate"
@@ -84,9 +77,6 @@ const Banner = () => {
           <div
             className="h-full flex-auto md:flex-1/2 max-w-6xl mx-auto w-full"
             data-aos="fade-left"
-            // data-aos-anchor="#example-anchor"
-            // data-aos-offset="500"
-            data-aos-duration="1000"
           >
             <Tilt className="box" options={tiltOption}>
               <img

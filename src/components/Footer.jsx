@@ -1,10 +1,9 @@
 // import { IconAppStore, IconGooglePlay } from "@/assets/images";
 import { footerLinks, socialLinks } from "@/constants";
 import React, { useEffect, useState } from "react";
-import { MobileFooter } from ".";
+import { MobileFooter, Button } from ".";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import clsx from "clsx";
-import { iconAndroid, iconDownload } from "@/assets/images";
 
 const Footer = () => {
   const isMobile = useIsMobile(680);
@@ -22,7 +21,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="my-4 md:my-9">
+    <footer className="my-4 md:my-9 pb-44 sm:pb-0">
       <div className="max-w-7xl px-4 mx-auto">
         {!isMobile && (
           <div className="mb-5">
@@ -154,17 +153,31 @@ const Footer = () => {
       </div>
       {isMobile && (
         <div
-          className={`fixed left-0 w-full px-4 z-50 duration-1000 transition-all ${
+          className={`fixed left-0 w-full z-50 duration-500 flex flex-col bg-primary px-3 py-5 transition-all ${
             showDownloadButton
-              ? "bottom-6 translate-y-0"
+              ? "bottom-0 translate-y-0"
               : "-bottom-10 translate-y-full"
           }`}
         >
-          <button className="download__btn bg-[#E79021] w-full rounded-md uppercase italic px-3 py-3 text-xl font-medium flex-center gap-2 animate-bounce">
-            <img src={iconAndroid} alt="" width={28} height={28} />
-            <span> Get Download Link</span>
-            <img src={iconDownload} alt="" width={28} height={28} />
-          </button>
+          <span className="download-heading text-xl font-semibold text-black block mb-2 text-center">
+            Get ₹ 20 Free
+          </span>
+          <div className="style_mobileButton__yeaoK sonar-wrapper">
+            <div class="downloadapk flex-center overflow-hidden relative bg-[#1c0101]">
+              <div class=" style_downloadbtn__WJeiu">
+                <img
+                  src="https://static-perf1.zupee.com/wp-content/uploads/2024/01/android-icon-001-51.gif"
+                  alt=""
+                  className="size-8 brightness-0"
+                />
+                <span>Download App</span>
+              </div>
+            </div>
+            <div class="sonar-wave sonar-wave1" />
+            <div class="sonar-wave sonar-wave2" />
+            <div class="sonar-wave sonar-wave3" />
+            <div class="sonar-wave sonar-wave4" />
+          </div>
         </div>
       )}
     </footer>

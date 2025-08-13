@@ -202,3 +202,138 @@ button {
   background: url("./assets/images/language-bg.png");
   @apply bg-cover;
 }
+
+.download-heading {
+  animation: style_blink__qAxRY 3s ease-in-out infinite alternate;
+}
+
+@keyframes style_blink__qAxRY {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/*  */
+
+.downloadapk {
+  margin: 20px auto;
+  width: calc(100% - 40px);
+  height: 52px;
+  border-radius: 100px;
+}
+.downloadapk:after,
+.downloadapk:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  height: calc(100% + 8px);
+  background: white;
+  opacity: 0.35;
+  background-blend-mode: color;
+  transform: skew(-30deg);
+  z-index: 1;
+  filter: blur(3px);
+}
+.style_downloadbtn__WJeiu {
+  background: #f1b300;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  line-height: 21px;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  column-gap: 1ch;
+  text-transform: capitalize;
+  padding: 0 15px;
+}
+.downloadapk:before {
+  width: 35px;
+  animation: blendingOverlayHome1 2s infinite;
+  animation-timing-function: linear;
+}
+
+.downloadapk:after {
+  width: 20px;
+  animation: blendingOverlayHome 2s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes blendingOverlayHome {
+  0% {
+    left: -15%;
+  }
+
+  to {
+    left: 180%;
+  }
+}
+
+@keyframes blendingOverlayHome1 {
+  0% {
+    left: -30%;
+  }
+
+  to {
+    left: 160%;
+  }
+}
+.sonar-wrapper {
+  max-width: 100% !important;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.sonar-wave {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 52px;
+  border-radius: 9999px;
+  background-color: #a6843c;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  border: 1px solid white;
+}
+.sonar-wave1 {
+  animation: sonarWave 2s linear infinite;
+}
+.sonar-wave2 {
+  animation: sonarWave 2s linear 0.5s infinite;
+}
+.sonar-wave3 {
+  animation-delay: 0.5s;
+}
+.sonar-wave4 {
+  animation-delay: 0.8s;
+}
+@keyframes sonarWave {
+  0% {
+    opacity: 1;
+    border-radius: 9999px;
+  }
+
+  to {
+    transform: scaleX(1.1) scaleY(1.55);
+    opacity: 0;
+    border-radius: 9999px;
+  }
+}
