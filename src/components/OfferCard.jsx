@@ -37,7 +37,7 @@ const OfferCard = ({ imageSrc, heading, duration, description }) => {
               <img
                 src={imageSrc}
                 alt="offer"
-                className="max-w-40 mx-auto mb-3"
+                className="max-w-20 lg:max-w-32 w-full mx-auto mb-3"
               />
               <h5 className="text-xl sm:text-2xl md:text-3xl font-semibold">
                 {heading}

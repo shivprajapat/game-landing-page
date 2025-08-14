@@ -24,7 +24,7 @@ const EnjoyGames = () => {
     infinite: true,
     slidesToShow: 4.4,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     arrows: false,
     dots: false,
     speed: 500,
@@ -50,7 +50,7 @@ const EnjoyGames = () => {
   };
   return (
     <section className="pt-12 md:pt-12 md:pb-12 relative">
-      <div className="max-w-6xl px-4 mx-auto relative">
+      <div className="max-w-6xl px-4 mx-auto">
         <div className="relative sm:before:bg-white before:absolute before:bottom-7 before:h-[95%] before:w-full md:before:w-2/3 xl:before:w-2/5 before:left-1/2 before:-translate-x-1/2 before:rounded-t-4xl sm:p-5 enjoy-language-bg">
           {/* <div className="absolute w-full md:w-2/3 xl:w-2/5 left-1/2 -translate-x-1/2 bg-red-500 h-full">
           <span>E</span>
@@ -85,7 +85,7 @@ const EnjoyGames = () => {
               {enjoyGamesSliderData.map((item, index) => (
                 <div
                   key={index}
-                  className="relative slide-wrapper !flex justify-center items-center"
+                  className="relative slide-wrapper !flex sm:!block justify-center items-center"
                 >
                   <div className="slide-card w-full relative">
                     <div
@@ -129,18 +129,26 @@ const EnjoyGames = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className="w-fit mx-auto -mt-5 z-20 flex-center flex-col">
-          <img
-            src="https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Ludo%20(1)-1751983863981.png?w=128&q=80"
-            alt=""
-          />
-          <p className="text-white font-medium text-sm md:text-xl text-center mt-3 px-5">
-            {
-              enjoyGamesSliderData[activeIndex % enjoyGamesSliderData.length]
-                .text
-            }
-          </p>
+          <div className="enjoy-game-shape w-full absolute bottom-0 left-0 z-20 bg-[#231616] flex-center">
+            <div>
+              <img
+                src={
+                  enjoyGamesSliderData[
+                    activeIndex % enjoyGamesSliderData.length
+                  ].icon
+                }
+                alt="icon"
+                className="size-20 sm:size-28 object-contain mx-auto"
+              />
+              <p className="text-white font-medium text-sm md:text-xl text-center px-5">
+                {
+                  enjoyGamesSliderData[
+                    activeIndex % enjoyGamesSliderData.length
+                  ].text
+                }
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

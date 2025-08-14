@@ -33,31 +33,36 @@ const enjoyGamesSliderData = [
     text: "Classic Lite",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326844-1751983712383.png",
+      icon:'https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Ludo%20(1)-1751983863981.png?w=128&q=80'
   },
   {
     text: "Classic Rich",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326846-1751983712690.png",
+      icon:'https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/SnL-v3-board%20(1)-1751983864428.png?w=128&q=80'
   },
   {
     text: "Classic App Mode",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326842-1751983711420.png",
-  },
+icon:'https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Call_Break_3D-1751983906225.png?w=128&q=80'  },
   {
     text: "Ludo League",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326846-1751983712690.png",
+      icon:'https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Ludo%20(1)-1751983863981.png?w=128&q=80'
   },
   {
     text: "1 Token Ludo",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326842-1751983711420.png",
+      icon:'https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Ludo%20(1)-1751983863981.png?w=128&q=80'
   },
   {
     text: "Snakes Sprint",
     videoPoster:
       "https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Frame%202087326843-1751983712948.png",
+      icon:'https://dkees1a826nmf.cloudfront.net/productionbackoffice/website/Ludo%20(1)-1751983863981.png?w=128&q=80'
   },
 ];
 const winnersData = [

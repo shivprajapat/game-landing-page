@@ -171,21 +171,22 @@ button {
 .slick-slide.slick-active.slick-center.slick-current .slide-card {
   @apply opacity-100  mt-0 z-50;
 }
-/* .enjoy-game-shape {
+.enjoy-game-shape {
   -webkit-clip-path: ellipse(50% 90% at 50% 100%);
   clip-path: ellipse(50% 90% at 50% 100%);
-  height: clamp(100px, 15vw, 170px);
-} */
+  height: clamp(150px, 15vw, 200px);
+}
 
 .winnersCard-group:hover .winnersCard-group-hover {
   color: white;
 }
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .enjoy-game-shape {
-    -webkit-clip-path: ellipse(50% 90% at 50% 100%);
-    clip-path: ellipse(60% 80% at 50% 100%);
+    -webkit-clip-path: ellipse(64% 90% at 50% 100%);
+    clip-path: ellipse(64% 90% at 50% 100%);
+    height: 25%;
   }
-} */
+}
 
 .center .slide-card {
   @apply relative before:rounded-[30px] before:absolute before:size-full before:bg-[#231616]/50 before:z-10;

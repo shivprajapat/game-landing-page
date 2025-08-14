@@ -13,7 +13,7 @@ import ImageAbout from "./about.png";
 import ImageCertificate from "./certificate.png";
 
 import icon100Secure from "./icons/100-Secure.webp";
-import iconRealPlayers from "./icons/Real-Players.webp";
+import iconRealPlayers from "./icons/Real-Players.svg";
 import iconREFEREarn from "./icons/REFER-Earn.webp";
 import icon24X7Support from "./icons/24X7Support.webp";
 import iconLoader from "./icons/loader.svg";
